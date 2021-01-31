@@ -1,0 +1,86 @@
+body{
+  margin: 00px 0 0 0;
+  width: 100%;
+  background-color: #212121;
+}
+
+h1{
+  color:white;
+}
+
+p{
+  color:white;
+}
+
+a:link{
+  color:white;
+}
+
+/*This is the template for the First top bar*/
+.MyNameBar{
+  padding-top: 10px;
+  font-family: calibri, sans-serif;
+  padding-bottom: 10px;
+  font-size:25px;
+  background-color: #121212;
+  color: white;
+}
+/*--------------------------------------------*/
+/*CSS for the Navigation Bar*/
+.navBar{
+  border-width:1px 0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  padding-bottom: 25px;
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+}
+/* CSS for the Navigation bars Text*/
+.navBar a{
+  display:inline-block;
+  padding:10px;
+  padding-left:40px;
+  padding-right:40px;
+  border:none;
+  text-decoration: none;
+  color: white;
+}
+/* For the Hover affect*/
+.navBar a:hover{
+  background-color: grey;
+}
+/*--------------------------------------------*/
+/* Implement Gride layout to add picture and a */
+.grid-container {
+  padding-top: 50px;
+  display: grid;
+  grid-row-gap: 1px;
+  min-height: 100%;
+  color:white;
+  grid-template-columns: auto auto;
+}
+.item1 {
+padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 50px;
+}
+
+.item2{
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.image{
+  border:5px solid black;
+}
+.image2{
+					height: 100px;
+					width: auto;
+}
+.textFont{
+  font-size:18px;
+  min-height: 100%;
+  color: white;
+}
