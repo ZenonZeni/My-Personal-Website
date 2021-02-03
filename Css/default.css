@@ -9,6 +9,10 @@ h1{
   color:white;
 }
 
+h2{
+  color:white;
+}
+
 p{
   color:white;
 }
@@ -68,7 +72,7 @@ a:link{
 .image{
   height: auto
   max-width: 100%;
-  border: 5px solid black;
+  border: 25px solid #212121;
 }
 
 .Container2{
@@ -121,7 +125,7 @@ a:link{
   height: auto;
   max-width: 100%;
   background-color:#212121;
-  padding-bottom: 5px;
+  padding-bottom: 25px;
 }
 
 /* Responsive */
