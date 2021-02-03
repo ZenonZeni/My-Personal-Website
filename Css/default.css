@@ -1,7 +1,7 @@
 body{
   margin: 00px 0 0 0;
   width: 100%;
-  background-color: #212121;
+  background-color: #121212;
   font-family: Verdana,sans-serif;
 }
 
@@ -23,7 +23,7 @@ a:link{
   font-family: Verdana, sans-serif;
   padding-bottom: 10px;
   font-size:25px;
-  background-color: #121212;
+  background-color: #000000;
   color: white;
   height:auto;
   width: 100%;
@@ -38,7 +38,7 @@ a:link{
   padding-bottom: 25px;
   text-align:center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #121212;
+  background-color: #000000;
   height:auto;
   width: 100%;
 }
@@ -57,21 +57,18 @@ a:link{
   background-color: grey;
 }
 /*--------------------------------------------*/
-/* Implement Gride layout to add picture and a */
-.grid-container {
-  padding-top: 50px;
-  display: grid;
-  grid-row-gap: 1px;
-  min-height: 100%;
-  color:white;
-  grid-template-columns: auto auto;
-}
-
+/* Implement containers */
 .Container1{
   padding-top: 50px;
   padding-bottom: 50px;
   height: auto;
   max-width: 100%;
+}
+
+.image{
+  height: auto
+  max-width: 100%;
+  border: 5px solid black;
 }
 
 .Container2{
@@ -83,28 +80,67 @@ a:link{
 }
 
 .Container3{
-  padding-top: 50px;
-  padding-bottom: 150px;
-  height: 100px;
-  max-width: 100%;
-}
-
-.bottomContainer{
-  padding-top: 5px;
-  height: auto;
+  padding-bottom: 50px;
   max-width: 100%;
   background-color:#121212;
-  padding-bottom: 5px;
+}
+/* Row Containers */
+.rowContainer{
+  padding-bottom: 150px;
+  padding-left: 300px;
+  height: 100px;
+  max-width: 100%;
+  background-color:#121212;
+}
+.rowContainer:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.image{
+.columns{
+  float: left;
+  width: 19%;
   height: auto;
+  padding: 5px;
+}
+.image2{
+  width: auto;
+  height: 100px;
   max-width: 100%;
   border: 5px solid black;
 }
-
 .textFont{
   font-size:14px;
   max-width: 100%;
   color: white;
+}
+/*---------------*/
+.bottomContainer{
+  padding-top: 5px;
+  height: auto;
+  max-width: 100%;
+  background-color:#212121;
+  padding-bottom: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+    float: left;
+    padding: 5px;
+  }
+  .rowContainer{
+    padding-bottom: 150px;
+    padding-left: 25px;
+    max-width: 100%;
+    background-color:#121212;
+  }
+  .rowContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 }
