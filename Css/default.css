@@ -64,7 +64,7 @@ a:link{
 /* Implement containers */
 .Container1{
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   height: auto;
   max-width: 100%;
 }
@@ -77,8 +77,8 @@ a:link{
 
 .Container2{
 
-  padding-top: 50px;
-  padding-bottom: 150px;
+  padding-top: 25px;
+  padding-bottom: 100px;
   height: 100px;
   max-width: 100%;
 }
