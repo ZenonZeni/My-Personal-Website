@@ -67,7 +67,7 @@ a:link{
 }
 /*--------------------------------------------*/
 /* Implement containers */
-.Container1{
+.Containertype1{
   padding-top: 50px;
   padding-bottom: 25px;
   height: auto;
@@ -81,15 +81,14 @@ a:link{
   border: 25px solid #212121;
 }
 
-.Container2{
-
-  padding-top: 25px;
+.Containertype2{
+  padding-top: 5px;
   padding-bottom: 100px;
   height: 100px;
   max-width: 100%;
 }
 
-.Container3{
+.Containertype3{
   padding-bottom: 50px;
   max-width: 100%;
   background-color:#121212;
@@ -166,6 +165,12 @@ a:link{
     max-width: 100%;
     background-color:#212121;
     padding-bottom: 25px;
+  }
+  .Containertype3{
+    padding-top: 5px;
+    padding-bottom: 175px;
+    height: 100px;
+    max-width: 100%;
   }
 
 }
