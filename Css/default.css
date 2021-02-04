@@ -117,17 +117,20 @@ a:link{
   height: auto;
   padding: 5px;
 }
+
 .image2{
   width: auto;
   height: 100px;
   max-width: 100%;
   border: 5px solid black;
 }
+
 .textFont{
   font-size:14px;
   max-width: 100%;
   color: white;
 }
+
 /*---------------*/
 .bottomContainer{
   border-color: #414141;
@@ -141,6 +144,7 @@ a:link{
 
 /* Responsive */
 @media screen and (max-width:1366px) {
+
   .columns {
     width: 100%;
     float: left;
@@ -153,11 +157,13 @@ a:link{
     max-width: 100%;
     background-color:#121212;
   }
+
   .rowContainer:after {
     content: "";
     display: table;
     clear: both;
   }
+
   .bottomContainer{
     border-color: #414141;
     border-top-style: solid;
@@ -167,6 +173,7 @@ a:link{
     background-color:black;
     padding-bottom: 25px;
   }
+
   .Containertype3{
     padding-top: 5px;
     padding-bottom: 175px;
