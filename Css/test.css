@@ -94,7 +94,7 @@ a:link{
   max-width: 100%;
   background-color:#121212;
 }
-/* Row Containers */
+/*-Row Containers-*/
 .rowContainer{
   padding-bottom: 150px;
   padding-right: 425px;
@@ -103,6 +103,7 @@ a:link{
   max-width: 100%;
   background-color:#121212;
 }
+
 .rowContainer:after {
   content: "";
   display: table;
@@ -115,17 +116,20 @@ a:link{
   height: auto;
   padding: 5px;
 }
+
 .image2{
   width: auto;
   height: 100px;
   max-width: 100%;
   border: 5px solid black;
 }
+
 .textFont{
   font-size:14px;
   max-width: 100%;
   color: white;
 }
+
 /*---------------*/
 .bottomContainer{
   border-color: #414141;
