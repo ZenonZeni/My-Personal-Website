@@ -5,6 +5,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title> Personal Website </title>
+		<script type="text/javascript">
+			function openNav() {
+				document.getElementById("mySidepanel").style.width = "300px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidepanel").style.width = "0px";
+			}
+		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="Css/default.css">
 	</head>
@@ -13,6 +22,7 @@
 			<center>Christopher Nguyen's Projects</center>
 		</div>
 		<div class= "navBar">
+			<a href="#" class="openbtn" align="left" onclick="openNav()" class="hover">&#8801;Menu </a>
 			<a href="Home.html" class="hover">Home</a>
 			<a href="Work Experience Page Personal Website.html" class="hover">Work Experience</a>
 			<a href="Education Page Personal Website.html" class="hover">Education</a>
