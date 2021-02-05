@@ -102,7 +102,7 @@ a:hover {
   text-align: center;
   overflow: hidden;
 }
-/* CSS for the Navigation bars Text*/
+/*-CSS for the Navigation bars Text-*/
 .navBar a{
   display:inline-block;
   padding:10px;
@@ -118,6 +118,7 @@ a:hover {
 }
 /*--------------------------------------------*/
 /* Implement containers */
+
 .Containertype1{
   padding-top: 50px;
   padding-bottom: 25px;

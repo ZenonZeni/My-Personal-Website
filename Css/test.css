@@ -66,7 +66,7 @@ a:link{
   background-color: grey;
 }
 /*----------------------*/
-/*-This is for sliding menu -*/
+/*-This is for sliding menu--*/
 #mySidepanel{
 	height: 100%;
 	width: 0px;
@@ -144,6 +144,7 @@ a:hover {
   max-width: 100%;
   background-color:#121212;
 }
+
 /*-Row Containers-*/
 .rowContainer{
   padding-bottom: 150px;
@@ -193,11 +194,13 @@ a:hover {
 
 /* Responsive */
 @media screen and (max-width:1366px) {
+
   .columns {
     width: 100%;
     float: left;
     padding: 5px;
   }
+
   .rowContainer{
     padding-right: 50px;
     padding-bottom: 825px;
@@ -205,11 +208,13 @@ a:hover {
     max-width: 100%;
     background-color:#121212;
   }
+
   .rowContainer:after {
     content: "";
     display: table;
     clear: both;
   }
+
   .bottomContainer{
     border-color: #414141;
     border-top-style: solid;
@@ -219,6 +224,7 @@ a:hover {
     background-color:black;
     padding-bottom: 25px;
   }
+  
   .Containertype3{
     padding-top: 5px;
     padding-bottom: 175px;
