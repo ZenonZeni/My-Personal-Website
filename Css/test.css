@@ -25,7 +25,7 @@ a:link{
   color:white;
 }
 
-/*This is the template for the First top bar*/
+/*-This is the template for the First top bar-*/
 .MyNameBar{
   padding-top: 10px;
   font-family: Verdana, sans-serif;
@@ -36,6 +36,7 @@ a:link{
   height:auto;
   width: 100%;
 }
+
 /*--------------------------------------------*/
 /*CSS for the Navigation Bar*/
 .navBar{
@@ -51,6 +52,7 @@ a:link{
   border-bottom-style: solid;
   border-color: #414141;
 }
+
 /* CSS for the Navigation bars Text*/
 .navBar a{
   display:inline-block;
@@ -61,10 +63,12 @@ a:link{
   text-decoration: none;
   color: white;
 }
+
 /* For the Hover affect*/
 .navBar a:hover{
   background-color: grey;
 }
+
 /*----------------------*/
 /*-This is for sliding menu--*/
 #mySidepanel{
@@ -116,7 +120,7 @@ a:hover {
 }
 
 /*--------------------------------------------*/
-/* Implement containers */
+/*-Implement containers-*/
 .Containertype1{
   padding-top: 50px;
   padding-bottom: 25px;
@@ -224,7 +228,7 @@ a:hover {
     background-color:black;
     padding-bottom: 25px;
   }
-  
+
   .Containertype3{
     padding-top: 5px;
     padding-bottom: 175px;
