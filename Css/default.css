@@ -248,4 +248,10 @@ a:hover {
     max-width: 100%;
   }
 
+  .image2{
+    width: auto;
+    height: 50px;
+    max-width: 100%;
+  }
+
 }
