@@ -3,22 +3,27 @@ body{
   width: 100%;
   background-color: #121212;
   font-family: Verdana,sans-serif;
+  font-size:16px;
 }
 
 h1{
   color:white;
+  font-size: 2vw;
 }
 
 h2{
   color:white;
+  font-size: 1.5vw;
 }
 
 h3{
   color:white;
+  font-size: 1.25vw;
 }
 
 p{
   color:white;
+  font size: 1vw;
 }
 
 a:link{
@@ -30,7 +35,7 @@ a:link{
   padding-top: 10px;
   font-family: Verdana, sans-serif;
   padding-bottom: 10px;
-  font-size:25px;
+  font-size:2vw;
   background-color: #000000;
   color: white;
   height:auto;
@@ -73,7 +78,7 @@ a:hover {
 }
 
 .openbtn {
-  font-size: 18px;
+  font-size: auto;
   background-color: #black;
   color: white;
 	border: none;
@@ -178,7 +183,7 @@ a:hover {
 }
 
 .textFont{
-  font-size:14px;
+  font-size:auto;
   max-width: 100%;
   color: white;
 }
@@ -196,6 +201,25 @@ a:hover {
 
 /* Responsive */
 @media screen and (max-width:1366px) {
+  body{
+    font-size: 12px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  h3{
+    font-size: 16px;
+  }
+
+  .MyNameBar{
+    font-size:30px;
+  }
 
   .columns {
     width: 100%;
@@ -215,16 +239,6 @@ a:hover {
     content: "";
     display: table;
     clear: both;
-  }
-
-  .bottomContainer{
-    border-color: #414141;
-    border-top-style: solid;
-    padding-top: 5px;
-    height: auto;
-    max-width: 100%;
-    background-color:black;
-    padding-bottom: 25px;
   }
 
   .Containertype3{

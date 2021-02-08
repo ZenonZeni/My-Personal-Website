@@ -1,0 +1,214 @@
+body{
+	margin: 00px 0 0 0;
+	width: 100%;
+	font-size:25px;
+	background-image: url('../Images/pixel.png')
+}
+
+h1{
+	color:white;
+	font-size: 2vw;
+}
+
+p{
+	color:white;
+	font-size: 1vw;
+}
+
+.namebar{
+	text-align: center;
+	color: white;
+	font-size: 3vw;
+}
+
+.navbar{
+	color: white;
+	background-color: black;
+	list-style-type: none;
+  padding: 5px;
+  overflow: hidden;
+	max-width: auto;
+}
+
+.navBar li{
+	float:left;
+	max-height:100%;
+	padding-left:10px;
+}
+
+.navBar li button{
+  display:block;
+  text-align: center;
+	background-color: black;
+  color: white;
+	font-size: 30px;
+	border: none;
+	text-align: center;
+	max-height:100%;
+	max-width:100%;
+}
+
+.homebtn{
+	visibility: hidden;
+}
+
+a:link{
+	color: white;
+}
+
+image{
+	height:100%;
+	max-width:100%;
+}
+
+.theframe{
+	height:80%;
+	width:500px;
+	max-width:100%;
+}
+
+/* ---CSS for collapsing side bar----- */
+/*-The-sidepanel-menu-*/
+#mySidepanel{
+	height: 100%;
+	width: 0;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #212121;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+#mySidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #f1f1f1;
+}
+
+#mySidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 2vw;
+  background-color: #black;
+  color: white;
+	border: none;
+	text-align: center;
+	max-height:100%;
+	max-width:100%;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/*-------Colapsing CSS ends --------------*/
+
+/*--Bottom bar----*/
+.bottomContainer{
+  border-color: #414141;
+  border-top-style: solid;
+  padding-top: 5px;
+  height: auto;
+  max-width: 100%;
+  background-color:black;
+  padding-bottom: 25px;
+}
+/*---end----*/
+
+/*---responsive------*/
+@media screen and (max-width:1366px) {
+
+	body{
+		font-size: 30px;
+	}
+
+	h1{
+		font-size:30px;
+	}
+
+	p{
+		font-size: 14px;
+	}
+
+	.navBar li button{
+		font-size: 40px;
+	}
+
+	.namebar{
+		font-size:40px;
+	}
+
+	.image{
+		max-width:100%;
+		height:auto;
+	}
+
+	.theframe{
+		height:500px;
+		width:500px;
+		max-width:100%;
+	}
+
+}
+
+@media screen and (max-width:400px) {
+
+	body{
+		margin: 00px 0 0 0;
+		max-width:100%;
+		font-size: 30px;
+	}
+
+	h1{
+		font-size:20px;
+	}
+
+	p{
+		font-size: 12px;
+	}
+
+	.navBar li button{
+		font-size: 20px;
+	}
+
+	.namebar{
+		font-size:20px;
+	}
+
+	.image{
+		max-width:100%;
+		height:auto;
+	}
+
+	.bottomContainer{
+	  border-color: #414141;
+	  border-top-style: solid;
+	  padding-top: 5px;
+	  height: auto;
+	  max-width: 100%;
+	  background-color:black;
+	  padding-bottom: 25px;
+	}
+
+	.theframe{
+		height:auto;
+		width:auto;
+		max-width:100%;
+	}
+}
