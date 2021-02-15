@@ -8,22 +8,22 @@ body{
 
 h1{
   color:white;
-  font-size: 2vw;
+  font-size: 30px;
 }
 
 h2{
   color:white;
-  font-size: 1.5vw;
+  font-size: 20px;
 }
 
 h3{
   color:white;
-  font-size: 1.25vw;
+  font-size: 18px;
 }
 
 p{
   color:white;
-  font size: 1vw;
+  font size: 16px;
 }
 
 a:link{
@@ -42,56 +42,6 @@ a:link{
   width: 100%;
 }
 
-/*-This is for sliding menu -*/
-#mySidepanel{
-	height: 100%;
-	width: 0px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #212121;
-	overflow-x: hidden;
-	padding-top: 60px;
-	transition: 0.5s;
-}
-
-#mySidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: #f1f1f1;
-}
-
-#mySidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.openbtn {
-  font-size: auto;
-  background-color: #black;
-  color: white;
-	border: none;
-	text-align: center;
-	max-height:100%;
-	max-width:100%;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-/*--------------------------------------------*/
 /*CSS for the Navigation Bar*/
 .navBar{
   list-style:none;
@@ -188,17 +138,6 @@ a:hover {
   color: white;
 }
 
-/*---------------*/
-.bottomContainer{
-  border-color: #414141;
-  border-top-style: solid;
-  padding-top: 5px;
-  height: auto;
-  max-width: 100%;
-  background-color:black;
-  padding-bottom: 25px;
-}
-
 /* Responsive */
 @media screen and (max-width:1366px) {
   body{
@@ -253,5 +192,4 @@ a:hover {
     height: 50px;
     max-width: 100%;
   }
-
 }
