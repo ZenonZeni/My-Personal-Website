@@ -11,7 +11,6 @@
 
       $email_body = "User Name: $name. \n".
                     "User Email: $visitor_email.\n"
-                    "User country: $country. \n"
                     "User subject: $subject. \n";
 
     $to = "zenonzeni@gmail.com";
@@ -20,8 +19,13 @@
 
     $headers .= "Reply-To: $visitor_email \r\n";
 
-    mail($to,$email_subject,$email_body,$headers);
+    $send_contact=mail($to,$email_subject,$email_body,$headers);
 
-    header("location: ContactMe.html");
+    if($send_contact){
+      header('Location: ContactMe.html');
+    }
+    else {
+      echo "ERROR";
+    }
 
  ?>
