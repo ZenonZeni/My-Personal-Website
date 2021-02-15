@@ -15,9 +15,8 @@
 
     $to = "zenonzeni@gmail.com";
 
-    $headers = "From: $email_from \r\n";
-
-    $headers .= "Reply-To: $visitor_email \r\n";
+    $headers = "From: $email_from \r\n" .
+                "Reply-To: $visitor_email \r\n";
 
     $send_contact=mail($to,$email_subject,$email_body,$headers);
 
