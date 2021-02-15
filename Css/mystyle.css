@@ -2,6 +2,7 @@ body{
 	margin: 00px 0 0 0;
 	width: 100%;
 	font-size:16px;
+	font-family:courier,arial,helvetica;
 	background-color: #121212;
 }
 
@@ -36,9 +37,11 @@ a:link{
 }
 
 .mainImage{
-	height: auto;
-	max-width: 100%;
-	border: 25px solid;
+	height: 200px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 }
 
 .image2{
