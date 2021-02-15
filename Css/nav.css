@@ -1,28 +1,24 @@
 /* For navigation bar on index*/
-.nav{
+.customnav{
 	color: white;
 	background-color: black;
 	list-style-type: none;
   padding: 5px;
   overflow: hidden;
 	max-width: auto;
-	border-bottom-style: solid;
-  border-color: #414141;
+	margin: 0;
+  padding: 0;
 }
 
-.nav li{
+li{
 	float: left;
-  display: block;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.nav li button{
-  display:block;
-  text-align: center;
+.customnav li button{
 	background-color: black;
   color: white;
 	padding-left: 25px;
@@ -30,8 +26,17 @@
 	border: none;
 }
 
+.navButtons{
+	background-color: black;
+  color: white;
+	padding-left: 25px;
+	font-size: 16px;
+	border: none;
+	text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
-  .nav li .navButtons{display: none;}
+  .customnav li .navButtons{display: none;}
   .openbtn {
     float: left;
     display: block;
@@ -39,13 +44,13 @@
 }
 
 @media screen and (max-width: 600px) {
-  .nav.responsive {position: relative;}
+  .customnav.responsive {position: relative;}
   .openbtn {
     position: relative;
     left: 0;
     top: 0;
   }
-  .nav.responsive button{
+  .customnav.responsive button{
     float: none;
     display: block;
     text-align: left;

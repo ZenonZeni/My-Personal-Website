@@ -19,33 +19,34 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 		<link rel="stylesheet" href="Css/default.css">
 		<link rel="stylesheet" href="Css/bottom.css">
+		<link rel="stylesheet" href="Css/nav.css">
 		<link rel="stylesheet" href="Css/slidingmenu.css">
 	</head>
 	<body>
 
-		<div class= "MyNameBar">
-			<center>Christopher Nguyen's Projects</center>
-		</div>
-
 		<div id="mySidepanel">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="../index.html">Home</a>
-			<a href="#">Work Experience</a>
-			<a href="#">Education</a>
-			<a href="#">Projects</a>
+			<a href="Work Experience Page Personal Website.html">Work Experience</a>
+			<a href="Education Page Personal Website.html">Education</a>
+			<a href="Projects Page Personal Website.html">Projects</a>
 		</div>
 
-		<div class= "navBar">
-			<a href="#" class="openbtn" align="left" onclick="openNav()" class="hover">Menu </a>
-			<a href="Home.html" class="hover">About me</a>
-			<a href="Work Experience Page Personal Website.html" class="hover">Work Experience</a>
-			<a href="Education Page Personal Website.html" class="hover">Education</a>
-			<a href="Projects Page Personal Website.html" class="hover">Projects</a>
-		</div>
+		<ul class="customnav">
+			<li><button class="openbtn" onclick="openNav()"> <!--&#8801; I removed a symbol remove comment to add it again--> Menu</button> </li>
+			<li><button class="navButtons" style="color:white;" onclick="document.location='../index.html'"> Home </button> </li>
+			<li><button class="navButtons" disabled style="color:white;" onclick="document.location='Home.html'"> About me </button> </li>
+			<li><button class="navButtons" style="color:white;" onclick="document.location='Work Experience Page Personal Website.html'"> Work Experience </button> </li>
+			<li><button class="navButtons" style="color:white;" onclick="document.location='Education Page Personal Website.html'"> Education </button> </li>
+			<li><button class="navButtons" style="color:white;" onclick="document.location='Projects Page Personal Website.html'"> Projects </button> </li>
+			<div>
+			<li style="float:right"><button class="navButtons" disabled href="#about">Projects</button></li>
+			</div>
+		</ul>
 
 		<center>
 
-			<div class="container-fluid" style="padding-top:50px; padding-bottom:50px;">
+			<div class="container-fluid" style="padding-top:50px; padding-bottom:25px;">
 				<div class="row" >
 					<h1 style="padding-top:5px; padding-bottom:5px;">Book Management Application</h1>
 					<p>A University Project to manage books by inserting, sorting, deleting them from application</p>
@@ -55,7 +56,7 @@
 				</div>
 			</div>
 
-			<div class="container-fluid" style="padding-top:50px; padding-bottom:50px; ">
+			<div class="container-fluid" style="padding-top:50px; padding-bottom:25px; ">
 				<div class="row">
 				<h1 style="padding-top:5px; padding-bottom:5px;">The Treasure Hunter a Text Based Game</h1>
 				<p>A HighSchool Project where I made a text based game.</p>
@@ -65,12 +66,22 @@
 				</div>
 			</div>
 
-			<div class="container-fluid" style="padding-top:50px; padding-bottom:50px;">
+			<div class="container-fluid" style="padding-top:50px; padding-bottom:25px;">
 				<div class="row">
 				<h1 style=" padding-top:5px; padding-bottom:5px;">Uno Web Application</h1>
 				<p>A HighSchool Project where I tried to replicate the card game Uno </p>
 				<p> To Play it you must be on a laptop or desktop. Click to
 				<button onClick="document.location='../Website-Uno-Game-Project/Uno.html'" style="color:black;"> Play
+				</button></p>
+			</div>
+			</div>
+
+			<div class="container-fluid" style="padding-top:50px; padding-bottom:25px; ">
+				<div class="row">
+				<h1 style=" padding-top:5px; padding-bottom:5px;">ifixit Computer Replacement Guide</h1>
+				<p>A published guide on fixing a Wireless Lan card Adapter in a Laptop  </p>
+				<p> To go to the ifixit guide. Click
+				<button onClick="document.location='https://www.ifixit.com/Guide/Lenovo+Legion+Y530-15ICH+Wireless+LAN+Card+Replacement/136896'" style="color:black;"> Here
 				</button></p>
 			</div>
 			</div>

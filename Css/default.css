@@ -30,47 +30,6 @@ a:link{
   color:white;
 }
 
-/*-This is the template for the First top bar-*/
-.MyNameBar{
-  padding-top: 10px;
-  font-family:courier,arial,helvetica;
-  padding-bottom: 10px;
-  font-size:2vw;
-  background-color: #000000;
-  color: white;
-  height:auto;
-  width: 100%;
-}
-
-/*CSS for the Navigation Bar*/
-.navBar{
-  list-style:none;
-  margin:0;
-  padding:0;
-  padding-bottom: 25px;
-  font-family:courier,arial,helvetica;
-  background-color: #000000;
-  height:auto;
-  width: 100%;
-  border-bottom-style: solid;
-  border-color: #414141;
-  text-align: center;
-  overflow: hidden;
-}
-/*-CSS for the Navigation bars Text-*/
-.navBar a{
-  display:inline-block;
-  padding:10px;
-  padding-left:40px;
-  padding-right:40px;
-  border:none;
-  text-decoration: none;
-  color: white;
-}
-/* For the Hover affect*/
-.navBar a:hover{
-  background-color: grey;
-}
 /*--------------------------------------------*/
 /* Implement containers */
 

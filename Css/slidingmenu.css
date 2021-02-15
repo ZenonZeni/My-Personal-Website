@@ -49,6 +49,12 @@ a:hover {
   background-color: #444;
 }
 
+@media screen and (max-width:1366px) {
+	#mySidepanel a {
+		font-size: 20px;
+	}
+}
+
 @media screen and (max-width:400px) {
 	.openbtn {
 		visibility: visible;

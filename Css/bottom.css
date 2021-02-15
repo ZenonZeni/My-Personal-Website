@@ -2,8 +2,6 @@
 /*--Bottom bar----*/
 .bottomContainer{
 	position: fixed;
-  border-color: #414141;
-  border-top-style: solid;
   padding-top: 5px;
   height: auto;
   max-width: 100%;
@@ -18,8 +16,6 @@
 
 	.bottomContainer{
 		position: fixed;
-	  border-color: #414141;
-	  border-top-style: solid;
 	  padding-top: 5px;
 	  height: auto;
 	  max-width: 100%;
@@ -35,8 +31,6 @@
 
 	.bottomContainer{
 		position: fixed;
-	  border-color: #414141;
-	  border-top-style: solid;
 	  padding-top: 5px;
 	  height: auto;
 	  max-width: 100%;
