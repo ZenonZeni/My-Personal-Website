@@ -7,9 +7,9 @@
 
       $email_subject = "New Form Submission";
 
-      $email_body = "User Name: $name. \n".
-                    "User Email: $visitor_email.\n"
-                    'User subject:' $subject. '\n';
+      $email_body = 'From: zenonzeni.ca' . "\r\n" .
+                    'Reply-To: zenonzeni.ca' . "\r\n" .
+                    'X-Mailer: PHP/' . phpversion();
 
     $to = 'zenonzeni@gmail.com';
 
