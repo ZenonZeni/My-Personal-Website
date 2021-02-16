@@ -16,7 +16,7 @@
     $headers = "From: zenonzeni.ca \r\n" .
                 "CC: zenonzeni.ca \r\n";
 
-    if(mail($to,$email_body,$body,$headers)){
+    if(mail($to,$email_subject,$email_body,$headers)){
         header('Location: ContactMe.html');
     }
     else{
