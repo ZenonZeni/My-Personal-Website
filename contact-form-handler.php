@@ -11,12 +11,18 @@
 
       $to = "zenonzeni@gmail.com";
 
-      $headers = "From: opc" . "\r\n" .
+      $headers = "From: opc" . "\n" .
                   "CC: opc";
 
       $test= mail($to,$email_subject,$email_body,$headers);
 
       echo $test;
+      echo $name;
+      echo $email;
+      echo $country;
+      echo $subject;
+      Echo "email has failed"
+
       //header('Location: ContactMe.html');
 
  ?>
