@@ -7,7 +7,7 @@
 
       $email_subject = "New Form Submission from my website";
 
-      $email_body = "Testing 123";
+      $email_body = $subject;
 
       $to = "zenonzeni@gmail.com";
 
