@@ -9,7 +9,7 @@
 
       $email_body = 'From: zenonzeni.ca' . "\r\n" .
                     'Reply-To: zenonzeni.ca' . "\r\n" .
-                    'X-Mailer: PHP/' . phpversion();
+                    'X-Mailer: PHP/' "$subject" . phpversion();
 
     $to = 'zenonzeni@gmail.com';
 
@@ -23,7 +23,6 @@
     }
     else {
       echo "ERROR";
-      echo $subject;
     }
 
  ?>
