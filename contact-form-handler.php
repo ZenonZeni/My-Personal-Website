@@ -7,18 +7,15 @@
 
       $email_subject = "New Form Submission from my website";
 
-      $email_body = 'Testing 123';
+      $email_body = "Testing 123";
 
-      $to = 'zenonzeni@hotmail.com';
+      $to = "zenonzeni@gmail.com";
 
-      $headers = "From: zenonzeni.ca \r\n" .
-                "CC: zenonzeni.ca \r\n";
+      $headers = "From: zenonzeni.ca" . "\r\n" .
+                  "CC: zenonzeni.ca";
 
-      if(mail($to,$email_subject,$email_body,$headers)){
-          header('Location: ContactMe.html');
-      }
-      else{
-        echo "message not sent";
-      }
+      mail($to,$email_subject,$email_body,$headers)
+
+      header('Location: ContactMe.html');
 
  ?>
