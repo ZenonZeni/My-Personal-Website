@@ -23,6 +23,7 @@
     }
     else {
       echo "ERROR";
+      echo $subject;
     }
 
  ?>
