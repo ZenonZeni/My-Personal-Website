@@ -35,7 +35,7 @@ li{
 	text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .customnav li .navButtons{display: none;}
   .openbtn {
     float: left;
@@ -43,7 +43,7 @@ li{
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .customnav.responsive {position: relative;}
   .openbtn {
     position: relative;
