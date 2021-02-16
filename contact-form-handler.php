@@ -7,20 +7,18 @@
 
       $email_subject = "New Form Submission from my website";
 
-      $email_body = 'From: zenonzeni.ca' . "\r\n" .
-                    'Reply-To: zenonzeni.ca' . "\r\n" .
-                    'X-Mailer: PHP/';
+      $email_body = 'Testing 123';
 
-    $to = 'zenonzeni@hotmail.com';
+      $to = 'zenonzeni@hotmail.com';
 
-    $headers = "From: zenonzeni.ca \r\n" .
+      $headers = "From: zenonzeni.ca \r\n" .
                 "CC: zenonzeni.ca \r\n";
 
-    if(mail($to,$email_subject,$email_body,$headers)){
-        header('Location: ContactMe.html');
-    }
-    else{
-      echo "message not sent";
-    }
+      if(mail($to,$email_subject,$email_body,$headers)){
+          header('Location: ContactMe.html');
+      }
+      else{
+        echo "message not sent";
+      }
 
  ?>
