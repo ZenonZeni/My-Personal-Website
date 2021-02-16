@@ -14,8 +14,9 @@
       $headers = "From: zenonzeni.ca" . "\r\n" .
                   "CC: zenonzeni.ca";
 
-      mail($to,$email_subject,$email_body,$headers);
+      $test= mail($to,$email_subject,$email_body,$headers);
 
-      header('Location: ContactMe.html');
+      echo $test;
+      //header('Location: ContactMe.html');
 
  ?>
