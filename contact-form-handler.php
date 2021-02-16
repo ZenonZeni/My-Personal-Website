@@ -11,8 +11,8 @@
 
       $to = "zenonzeni@gmail.com";
 
-      $headers = "From: zenonzeni.ca" . "\r\n" .
-                  "CC: zenonzeni.ca";
+      $headers = "From: opc" . "\r\n" .
+                  "CC: opc";
 
       $test= mail($to,$email_subject,$email_body,$headers);
 
