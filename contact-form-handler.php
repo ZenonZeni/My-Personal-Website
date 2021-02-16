@@ -1,7 +1,7 @@
 <?php
 
       $name = $_POST['name'];
-      $visitor_email = $_POST['email'];
+      $email = $_POST['email'];
       $country = $_POST['country'];
       $subject = $_POST['subject'];
 
@@ -17,7 +17,7 @@
     $to = 'zenonzeni@gmail.com';
 
     $headers = "From: zenonzeni.ca \r\n" .
-                "Reply-To: $visitor_email \r\n";
+                "Reply-To: $email \r\n";
 
     $send_contact= mail($to,$email_subject,$body,$headers);
 
