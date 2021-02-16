@@ -9,12 +9,12 @@
 
       $email_body = 'From: zenonzeni.ca' . "\r\n" .
                     'Reply-To: zenonzeni.ca' . "\r\n" .
-                    'X-Mailer: PHP/' . phpversion();
+                    'X-Mailer: PHP/';
 
     $to = 'zenonzeni@hotmail.com';
 
     $headers = "From: zenonzeni.ca \r\n" .
-                "Reply-To: $email \r\n";
+                "CC: zenonzeni.ca \r\n";
 
     if(mail($to,$email_body,$body,$headers)){
         header('Location: ContactMe.html');
