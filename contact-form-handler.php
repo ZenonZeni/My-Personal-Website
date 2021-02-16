@@ -5,7 +5,7 @@
       $country = $_POST['country'];
       $subject = $_POST['subject'];
 
-      $email_subject = "New Form Submission";
+      $email_subject = "New Form Submission from my website";
 
       $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message: {$country}", "Subject:", $subject];
       $body = join(PHP_EOL, $bodyParagraphs);
@@ -14,18 +14,16 @@
                     'Reply-To: zenonzeni.ca' . "\r\n" .
                     'X-Mailer: PHP/' . phpversion();
 
-    $to = 'zenonzeni@gmail.com';
+    $to = 'zenonzeni@hotmail.com';
 
     $headers = "From: zenonzeni.ca \r\n" .
                 "Reply-To: $email \r\n";
 
-    $send_contact= mail($to,$email_subject,$body,$headers);
-
-    if($send_contact){
-      header('Location: ContactMe.html');
+    if(mail($to,$email_subject,$body,$headers)){
+        header('Location: ContactMe.html');
     }
-    else {
-      echo "ERROR";
+    else{
+      echo "message not sent";
     }
 
  ?>
