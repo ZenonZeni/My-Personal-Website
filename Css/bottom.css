@@ -8,7 +8,7 @@
   background-color:black;
   bottom: 0;
 	width: 100%;
-	opacity: 0.95;
+	opacity: 0.925;
 }
 /*---end----*/
 
@@ -24,6 +24,7 @@
 	  padding-bottom: 25px;
 		bottom: 0;
 		width: 100%;
+		opacity: 0.925;
 	}
 
 }
@@ -39,6 +40,7 @@
 	  padding-bottom: 10px;
 		bottom: 0;
 		width: 100%;
+		opacity: 0.925;
 	}
 
 
