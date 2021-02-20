@@ -30,6 +30,12 @@ a:link{
   color:white;
 }
 
+.theframe{
+	height:300px;
+	width:600px;
+	max-width:100%;
+  padding-bottom:25px;
+}
 /*--------------------------------------------*/
 /* Implement containers */
 
@@ -44,7 +50,6 @@ a:link{
 .image{
   height: auto;
   max-width: 100%;
-  border: 25px solid #212121;
 }
 
 .Containertype2{
