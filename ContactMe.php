@@ -64,17 +64,21 @@
 						<input id="submitmessage" type="submit" name="submit" value="Send Message" onclick="alertSuccess()">
 						</div>
 						</div>
+					</form>
+				 </div>
 
 						<?php if($message_sent){
-							<div class="container-fluid" id="successAlert" style="padding-left:25%; padding-right:25%;">
-							<div class="alert alert-success" role="alert">
-							  This is a success alert—check it out!
-							</div>
-								</div>
-	          </form>
-	          </div>
+								echo <script>
+					       document.getElementById('successAlert').style.visibility="visible;";
+					      </script>;
 						}
 						?>
+
+						<div class="container-fluid" id="successAlert" style="padding-left:25%; padding-right:25%; visibility:hidden;">
+						<div class="alert alert-success" role="alert">
+							This is a success alert—check it out!
+						</div>
+							</div>
 
         <center>
 					<div class="bottomContainer">
