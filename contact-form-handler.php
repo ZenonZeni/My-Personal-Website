@@ -10,14 +10,6 @@
     $to = "ZenonZeni@gmail.com";
     $headers = "From: $email_from \r\n";
     $headers .= "Reply-To: $visitor_email \r\n";
-
-    $condition= mail($to,$email_subject,$txt,$headers);
-
-    if(condition){
-      $message_sent = true;
-    }
-    else{
-      $message_sent = false;
-    }
-
+    mail($to,$email_subject,$txt,$headers);
+    header("location: ContactMeSuccess.html");
  ?>
