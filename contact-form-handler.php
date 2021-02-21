@@ -5,9 +5,9 @@
 
       $email_from = 'opc@zenonzeni.ca';
       $email_subject = "New Form Submission"
-      $email_body = "User Name: $name. \n".
-                    "User Email: $visitor_email.\n"
-                    "User subject: $subject. \n";
+      $email_body = "User Name:". $name . "\n".
+                    "User Email:". $visitor_email."\n".
+                    "User subject:". $subject. "\n";
 
     $to = "ZenonZeni@gmail.com"
     $headers = "From: $email_from \r\n";
