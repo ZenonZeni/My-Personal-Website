@@ -1,3 +1,5 @@
+<?php include 'contact-form-handler.php';?>
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -17,7 +19,9 @@
 		<link rel="stylesheet" href="Css/bottom.css">
 		<link rel="stylesheet" href="Css/nav.css">
 		<link rel="stylesheet" href="Css/slidingmenu.css">
+		<script src="/JavaScript/alert.js"> </script>
 	</head>
+
 	<body>
       <div id="mySidepanel">
   			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -25,7 +29,7 @@
   			<a href="Work Experience Page Personal Website.html">Work Experience</a>
   			<a href="Education Page Personal Website.html">Education</a>
   			<a href="Projects Page Personal Website.html">Projects</a>
-				<a href="ContactMe.html">Contact Me</a>
+				<a href="ContactMe.php">Contact Me</a>
   		</div>
 
   		<ul class="customnav">
@@ -41,7 +45,7 @@
       </ul>
 
         <div class="container-fluid" style="padding-left:25%; padding-right:25%">
-          <form id="contact-form" method="POST" action="contact-form-handler.php">
+          <form id="contact-form" method="POST">
             <div class="row">
             <label for="xname" style="color:white;">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name..">
@@ -57,12 +61,20 @@
             <input type="email" id="email" name="email" placeholder="Your email">
             </div>
 						<div class="row" style="padding-top:20px;">
-						<input id="message" type="submit" name="submit" value="Send Message">
+						<input id="submitmessage" type="submit" name="submit" value="Send Message" onclick="alertSuccess()">
 						</div>
 						</div>
 
-          </form>
-          </div>
+						<?php if($message_sent){
+							<div class="container-fluid" id="successAlert" style="padding-left:25%; padding-right:25%;">
+							<div class="alert alert-success" role="alert">
+							  This is a success alert—check it out!
+							</div>
+								</div>
+	          </form>
+	          </div>
+						}
+						?>
 
         <center>
 					<div class="bottomContainer">
