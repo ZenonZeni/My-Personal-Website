@@ -5,5 +5,8 @@
     $headers = "From: opc@zenonzeni.ca" . "\r\n" .
     "CC: opc@zenonzeni.ca";
 
-    mail($to,$subject,$txt,$headers);
+    echo mail($to,$subject,$txt,$headers);
+
+    echo test;
+
  ?>
