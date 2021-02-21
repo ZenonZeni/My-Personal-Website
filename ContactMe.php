@@ -68,9 +68,9 @@
 				 </div>
 
 						<?php if($message_sent){
-								echo <script>
+								echo '<script>
 					       document.getElementById('successAlert').style.visibility="visible;";
-					      </script>;
+					      </script>';
 						}
 						?>
 
