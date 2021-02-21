@@ -1,4 +1,10 @@
-<?php include 'contact-form-handler.php';?>
+<?php include 'contact-form-handler.php';
+		if($message_sent){
+		echo '<script>
+		 document.getElementById("successAlert").style.visibility="visible";
+		</script>';
+		}
+?>
 
 <html>
 	<head>
@@ -66,13 +72,6 @@
 						</div>
 					</form>
 				 </div>
-
-						<?php if($message_sent){
-								echo '<script>
-					       document.getElementById("successAlert").style.visibility="visible";
-					      </script>';
-						}
-						?>
 
 						<div class="container-fluid" id="successAlert" style="padding-left:25%; padding-right:25%; visibility:hidden;">
 						<div class="alert alert-success" role="alert">
