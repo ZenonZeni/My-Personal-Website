@@ -69,7 +69,7 @@
 
 						<?php if($message_sent){
 								echo '<script>
-					       document.getElementById('successAlert').style.visibility="visible;";
+					       document.getElementById("successAlert").style.visibility="visible";
 					      </script>';
 						}
 						?>
