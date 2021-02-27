@@ -18,21 +18,22 @@ li{
   color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
+	padding-left:25px;
   font-size: 18px;
+	text-align: center;
 }
 
 .customnav li button{
 	background-color: #181818;
   color: white;
-	padding-left: 25px;
 	font-size: 16px;
 	border: none;
+	text-align: center;
 }
 
 .navButtons{
 	background-color: #181818;
   color: white;
-	padding-left: 25px;
 	font-size: 16px;
 	border: none;
 	text-decoration: none;
