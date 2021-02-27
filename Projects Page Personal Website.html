@@ -24,6 +24,25 @@
 		<link rel="stylesheet" href="Css/slidingmenu.css">
 		<link rel="stylesheet" href="Css/page.css">
 		<link rel="stylesheet" href="Css/slide.css">
+
+		<style>
+
+		#slideContainer{
+			padding-left:33%; padding-right:33%;
+		}
+		@media screen and (max-width:800px) {
+		  #slideContainer{
+		    padding-left:20%; padding-right:20%;
+		  }
+		}
+
+		@media screen and (max-width:420px) {
+		  #slideContainer{
+		    padding-left:2%; padding-right:2%;
+		  }
+		}
+		</style>
+
 	</head>
 
 	<body>
@@ -52,17 +71,32 @@
 		</ul>
 
 			<!--Slide show template used from w3 school -->
-			<div class="container-fluid" style="padding-top:100px; padding-bottom:100px; background-color:#212121;">
+			<div class="container-fluid" style="padding-top:150px; padding-bottom:300px; background-color:#212121;">
 					<center>
 						<div class="row" style="text-align:center;">
 							  <div class="mySlides">
-							    <img src="Images/program.png" style="width:auto;">
+										<div class="col" id="slideContainer">
+							    <img src="Images/program.png" style="width:100%; height:250px;">
+									<div style="border-style: solid; color: #48484848; background-color: #48484848; padding:1%; ">
+										<p color="white" align="left"> Text Based Game</p>
+									</div>
+							  </div>
+							</div>
+							  <div class="mySlides">
+									<div class="col" id="slideContainer">
+							    <img src="Images/BMP.png" style="width:100%; height:250px;">
+									<div style="border-style: solid; color: #48484848; background-color: #48484848; padding:1%;">
+										<p color="white" align="left"> Java Book Management Application</p>
+									</div>
+								</div>
 							  </div>
 							  <div class="mySlides">
-							    <img src="Images/BMP.png" style="width:auto;">
-							  </div>
-							  <div class="mySlides">
-							    <img src="Images/website.png" style="width:auto;">
+									<div class="col" id="slideContainer">
+							    <img src="Images/website.png" style="width:100%; height:250px; ">
+									<div style="border-style: solid; color: #48484848; background-color: #48484848; padding:1%;">
+										<p color="white" align="left"> Prototype website </p>
+									</div>
+								</div>
 							  </div>
 							</div>
 							<div class="row" style="width:auto; padding-top:2%;">
