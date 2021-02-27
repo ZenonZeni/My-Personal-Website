@@ -4,7 +4,7 @@
 	background-color: #181818;
 	list-style-type: none;
   padding: 5px;
-  overflow: hidden;
+  overflow: visible;
 	max-width: auto;
 	margin: 0;
   padding: 0;

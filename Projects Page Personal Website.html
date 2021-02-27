@@ -17,14 +17,19 @@
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link rel="stylesheet" href="Css/slide.css">
 		<link rel="stylesheet" href="Css/default.css">
 		<link rel="stylesheet" href="Css/bottom.css">
 		<link rel="stylesheet" href="Css/nav.css">
 		<link rel="stylesheet" href="Css/slidingmenu.css">
 		<link rel="stylesheet" href="Css/page.css">
+		<link rel="stylesheet" href="Css/slide.css">
 	</head>
+
 	<body>
+
 	<div class="page">
+
 		<div id="mySidepanel">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="../index.html">Home</a>
@@ -45,6 +50,31 @@
 			<li style="float:right"><button class="navButtons" disabled href="#about">Projects</button></li>
 			</div>
 		</ul>
+
+			<!--Slide show template used from w3 school -->
+			<div class="container-fluid" style="padding-top:100px; padding-bottom:100px; background-color:#212121;">
+					<center>
+						<div class="row" style="text-align:center;">
+							  <div class="mySlides">
+							    <img src="Images/program.png" style="width:auto;">
+							  </div>
+							  <div class="mySlides">
+							    <img src="Images/BMP.png" style="width:auto;">
+							  </div>
+							  <div class="mySlides">
+							    <img src="Images/website.png" style="width:auto;">
+							  </div>
+							</div>
+							<div class="row" style="width:auto; padding-top:2%;">
+								<div style="text-align:center">
+									<span class="dot" onclick="currentSlide(1)"></span>
+									<span class="dot" onclick="currentSlide(2)"></span>
+									<span class="dot" onclick="currentSlide(3)"></span>
+									</div>
+							</div>
+					</center>
+			</div>
+		<script src="JavaScript/slideshow.js"> </script>
 
 		<center>
 
@@ -135,15 +165,15 @@
 			</div>
 
 			<div class="bottomContainer">
-			<p> Contact Information </p>
-			<p> ZenonZeni@hotmail.com |
-			<a href="https://github.com/zenonzeni" style="color:white;"> GitHub</a> |
-			<a href="https://www.linkedin.com/in/zenonzeni/ " style="color:white;"> linkedin</a> |
-			<a href="https://discord.gg/uTQqtxTPZ8" style="color:white;"> Discord</a>
-			</p>
+				<p> Contact Information </p>
+				<p> ZenonZeni@hotmail.com |
+				<a href="https://github.com/zenonzeni" style="color:white;"> GitHub</a> |
+				<a href="https://www.linkedin.com/in/zenonzeni/ " style="color:white;"> linkedin</a> |
+				<a href="https://discord.gg/uTQqtxTPZ8" style="color:white;"> Discord</a>
+				</p>
 			</div>
 
 		</center>
 	</div>
 	</body>
-<html>
+</html>
