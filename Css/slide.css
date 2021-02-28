@@ -1,7 +1,7 @@
 .mySlidesImage{
   height:400px;
   width:100%;
-  object-fit: contain;
+  object-fit: scale-down;
   border-style: thin; color: #48484848; background-color: #48484848;
 }
 
