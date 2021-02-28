@@ -47,8 +47,8 @@
 @media screen and (max-width:420px) {
   .mySlidesImage{
     height:200px;
-      width:100%;
-      object-fit: scale-down;
+    width:100%;
+    object-fit: fill;
   }
 
   .dot{
