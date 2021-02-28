@@ -24,6 +24,7 @@
   .mySlidesImage{
     height:300px;
       width:100%;
+      object-fit: scale-down;
   }
 
   .dot{
@@ -47,6 +48,7 @@
   .mySlidesImage{
     height:200px;
       width:100%;
+      object-fit: scale-down;
   }
 
   .dot{
