@@ -1,7 +1,7 @@
 .mySlidesImage{
   height:400px;
   width:100%;
-  object-fit: scale-down;
+  object-fit: fill;
   border-style: thin; color: #48484848; background-color: #48484848;
 }
 
@@ -24,7 +24,7 @@
   .mySlidesImage{
     height:300px;
       width:100%;
-      object-fit: scale-down;
+      object-fit: fill;
   }
 
   .dot{

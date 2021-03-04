@@ -34,7 +34,7 @@
 
   		<ul class="customnav">
   			<li><button class="openbtn" onclick="openNav()"> <!--&#8801; I removed a symbol remove comment to add it again--> Menu</button> </li>
-  			<li><button class="navButtons" disabled style="color:white;" onclick="document.location='../index.html'"> Home </button> </li>
+  			<li><button class="navButtons" style="color:white;" onclick="document.location='../index.html'"> Home </button> </li>
   			<li><button class="navButtons" disabled style="color:white;" onclick="document.location='Home.html'"> About me </button> </li>
   			<li><button class="navButtons" style="color:white;" onclick="document.location='Work Experience Page Personal Website.html'"> Work Experience </button> </li>
   			<li><button class="navButtons" style="color:white;" onclick="document.location='Education Page Personal Website.html'"> Education </button> </li>
@@ -44,16 +44,20 @@
   			</div>
       </ul>
 
-        <div class="container-fluid" style="padding-left:25%; padding-right:25%">
+				<div class="container-fluid" style="padding-top:5%; padding-left:7%; padding-bottom:1%;">
+					<u>	<h1> Contact Form </h2> </u>
+				</div>
+
+        <div class="container-fluid" style="padding:7.5%; padding-top:0%; padding-bottom:1%;">
           <form id="contact-form" method="POST" action="contact-form-handler.php">
-            <div class="row">
+            <div class="row" style="padding-bottom:1%;">
             <label for="xname" style="color:white;">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name..">
             </div>
-						<div class="row">
+						<div class="row" style="padding-bottom:1%;">
 						<label for="xname" style="color:white;">Subject</label>
 						</div>
-						<div class="row">
+						<div class="row" style="padding-bottom:1%;">
 					<textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
 					</div>
             <div class="row">
@@ -63,8 +67,10 @@
 						<div class="row" style="padding-top:20px;">
 						<input id="submitmessage" type="submit" name="submit" value="Send Message" onclick="alertSuccess()">
 						</div>
-						</form>
-				</div>
+					</form>
+					</div>
+
+					<div class="container-fluid" style="padding-bottom:100px;">
 
 						<div class="container-fluid" id="successAlert" style="padding-left:25%; padding-right:25%; visibility:visible;">
 						<div class="alert alert-success" role="alert">
