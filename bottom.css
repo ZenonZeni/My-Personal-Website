@@ -1,0 +1,52 @@
+
+/*--Bottom bar----*/
+.bottomContainer{
+	position: absolute;
+  padding-top: 5px;
+  height: auto;
+  max-width: 100%;
+  background-color:#121212;
+  bottom: 0;
+	width: 100%;
+	opacity: 0.925;
+	padding-bottom: 10px;
+}
+
+.bottomLink{
+	color:white;
+}
+/*---end----*/
+
+/*---responsive------*/
+@media screen and (max-width:1366px) {
+
+	.bottomContainer{
+		position: absolute;
+	  padding-top: 5px;
+	  height: auto;
+	  max-width: 100%;
+	  background-color:#121212;
+	  padding-bottom: 25px;
+		bottom: 0;
+		width: 100%;
+		opacity: 0.90;
+	}
+
+}
+
+@media screen and (max-width:400px) {
+
+	.bottomContainer{
+		position: absolute;
+	  padding-top: 5px;
+	  height: auto;
+	  max-width: 100%;
+	  background-color:#121212;
+	  padding-bottom: 10px;
+		bottom: 0;
+		width: 100%;
+		opacity: 0.85;
+	}
+
+
+}
