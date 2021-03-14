@@ -8,13 +8,13 @@ body{
 
 h1{
 	color:white;
-	font-size: 5vw;
+	font-size: 4vw;
 	padding-bottom: 5px;
 }
 
 h2{
 	color:white;
-	font-size: 25px;
+	font-size: 1vw;
 }
 
 p{
@@ -64,11 +64,11 @@ a:link{
 	}
 
 	h2{
-		font-size:18px;
+		font-size:16px;
 	}
 
 	p{
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	.image{
@@ -107,7 +107,7 @@ a:link{
 	}
 
 	p{
-		font-size: 8px;
+		font-size: 9px;
 	}
 
 	.nav li button{

@@ -3,7 +3,6 @@
 	color: white;
 	background-color: #181818;
 	list-style-type: none;
-  padding: 5px;
   overflow: visible;
 	max-width: auto;
 	margin: 0;
@@ -26,7 +25,7 @@ li{
 .customnav li button{
 	background-color: #181818;
   color: white;
-	font-size: 16px;
+	font-size: 18px;
 	border: none;
 	text-align: center;
 }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-Root>
+<!-Please note to self that CSS comments are not the same as HTML Comments>
+<!--By: Christopher Nguyen  -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Personal Website </title>
+			<script type="text/javascript">
+				function openNav() {
+					document.getElementById("mySidepanel").style.width = "300px";
+				}
+				function closeNav() {
+					document.getElementById("mySidepanel").style.width = "0px";
+				}
+			</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link rel="stylesheet" href="Css/default.css">
+		<link rel="stylesheet" href="Css/bottom.css">
+		<link rel="stylesheet" href="Css/nav.css">
+		<link rel="stylesheet" href="Css/slidingmenu.css">
+		<link rel="stylesheet" href="Css/page.css">
+	</head>
+	<body>
+		<div class="page">
+
+			<div id="mySidepanel">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="../index.html">Home</a>
+				<a href="Work Experience Page Personal Website.html">Work Experience</a>
+				<a href="AboutMe.html">AboutMe</a>
+				<a href="ContactMe.html">Contact Me</a>
+			</div>
+
+			<ul class="customnav">
+				<li><button class="openbtn" onclick="openNav()"> <!--&#8801; I removed a symbol remove comment to add it again--> Menu</button> </li>
+				<li><button class="navButtons" style="color:white;" onclick="document.location='../index.html'"> Home </button> </li>
+				<li><button class="navButtons" style="color:white;" onclick="document.location='AboutMe.html'"> About Me </button> </li>
+				<li><button class="navButtons" style="color:white;" onclick="document.location='Projects Page Personal Website.html'"> Projects </button> </li>
+				<li><button class="navButtons" style="color:white;" onclick="document.location='ContactMe.html'"> Contact Me </button> </li>
+				<div>
+				<li style="float:right"><button class="navButtons" disabled href="#about">Projects</button></li>
+				</div>
+			</ul>
+
+			<!--Education-->
+			<div class="container-fluid" style="padding-left:7%; padding-right:7%; padding-bottom:100px;">
+				<div class="row" style="padding-top:3%">
+					<h1> Education </h1>
+				</div>
+
+				<div class="row" style="padding-top:10px; padding-bottom:10px;">
+
+					<div class="auto col-md-5" style="height:auto; padding-bottom:10px;">
+							<div>
+								<div style="width:100%; height:300px;">
+								<a href=#><img src="Images/York.jpg"
+							align="center" alt="Something" style="height:100%; width:100%;"></a>
+							</div>
+							<div style="border-style: solid; color: #48484848; background-color: #181818; padding:1%; height:50px;">
+								<h2> York University </h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg" style="height:auto; padding-bottom:10px;">
+						<div style="width:100%; height:300px;">
+							<div style="border-style: solid; color: #48484848; background-color: #181818; padding:2%; height:350px;">
+								<h2 style="padding-bottom:1%;"> Bachelor's Information Technology </h2>
+								<h3 style="padding-bottom:1%;"> September 2018 - April 2021  </h3>
+								<p> At York I developed, tested and designed small apps, web pages using java,
+									html, CSS, PHP and JavaScript.</p>
+								<p> Also, learned about IT systems and how they work. </p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row" style=" padding-top:40px; padding-bottom:5%;">
+
+					<div class="auto col-md-5" style="height:auto; padding-bottom:1%;">
+							<div>
+								<div style="width:100%; height:300px; object-fit: fill;">
+								<a href=#><img src="Images/maple.jpg"
+									align="center" alt="Something" style="height:100%; width:100%;"></a>
+							</div>
+							<div style="border-style: solid; color: #48484848; background-color: #181818; padding:1%; height:50px;">
+								<h2> Maple High School </h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg" style="height:auto; padding-bottom:1%;">
+						<div style="width:auto;">
+							<div style="border-style: solid; color: #48484848; background-color: #181818; padding:2%; height:350px;">
+								<h1 style="padding-bottom:1%;"> Bachelor's Information Technology </h1>
+								<h2 style="padding-bottom:1%;"> September 2018 - April 2021  </h2>
+								<p> At Maple I first learned computer programming languages java, html,
+								JavaScript and CSS.
+								</p>
+								<p> Here I developed some of my first programs. </p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<center>
+
+					<div class="bottomContainer">
+					<p> Contact Information </p>
+					<p> ZenonZeni@hotmail.com |
+					<a href="https://github.com/zenonzeni" style="color:white;"> GitHub</a> |
+					<a href="https://www.linkedin.com/in/zenonzeni/ " style="color:white;"> Linkedin</a> |
+					<a href="https://discord.gg/uTQqtxTPZ8" style="color:white;"> Discord</a>
+					</p>
+					</div>
+
+			</center>
+		</div>
+	</body>
+<html>
