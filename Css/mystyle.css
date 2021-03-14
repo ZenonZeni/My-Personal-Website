@@ -2,13 +2,14 @@ body{
 	margin: 00px 0 0 0;
 	width: 100%;
 	font-size:16px;
-	font-family: arial, sans-serif;
+	font-family: Georgia, serif;
 	background-color: #121212;
 }
 
 h1{
 	color:white;
 	font-size: 30px;
+	padding-bottom: 5px;
 }
 
 h2{
