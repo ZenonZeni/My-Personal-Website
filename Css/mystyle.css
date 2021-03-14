@@ -2,7 +2,8 @@ body{
 	margin: 00px 0 0 0;
 	width: 100%;
 	font-size:16px;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: "Comic Sans MS", sans-serif;
+	letter-spacing:2px;
 }
 
 h1{
