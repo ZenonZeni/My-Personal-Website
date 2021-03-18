@@ -1,4 +1,4 @@
-var slideIndex = 1;
+var slideIndex = 0;
 
 moveSlides(slideIndex);
 
@@ -10,7 +10,7 @@ function moveSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
+  if (n > slides.length) {slideIndex = 0}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
@@ -38,5 +38,5 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4500); // Change image every 4.5 seconds
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
