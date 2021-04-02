@@ -13,7 +13,8 @@ $(document).ready(function() {
                 // let's redirect
                 if (jsonData.success == "1")
                 {
-                    alert("success")
+                    document.getElementByID("successAlert").style.visibility = "visible";
+                    alert("success");
                 }
                 else
                 {
