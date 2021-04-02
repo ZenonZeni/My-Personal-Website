@@ -10,6 +10,12 @@
       $to = "ZenonZeni@gmail.com";
       $headers = "From: $email_from \r\n";
       $headers .= "Reply-To: $visitor_email \r\n";
-      mail($to,$email_subject,$txt,$headers);
-      header("location: ContactMeSuccess.html");
+      $sent = mail($to,$email_subject,$txt,$headers);
+
+      if($sent == 1){
+          echo json_encode(array('success' => 1));
+      }
+      else{
+          echo json_encode(array('success' => 0));
+      }
  ?>
