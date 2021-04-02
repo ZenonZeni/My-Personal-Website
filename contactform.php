@@ -12,10 +12,6 @@
       $headers .= "Reply-To: $visitor_email \r\n";
       $sent = mail($to,$email_subject,$txt,$headers);
 
-      if($sent == 1){
-          echo json_encode(array('success' => 1));
-      }
-      else{
-          echo json_encode(array('success' => 0));
-      }
+      echo json_encode(array('success' => 1));
+
  ?>

@@ -4,7 +4,7 @@ $(document).ready(function() {
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: 'contact-form-handler2.php',
+            url: 'contactform.php',
             data: $(this).serialize(),
             success: function(response)
             {
@@ -13,7 +13,7 @@ $(document).ready(function() {
                 // let's redirect
                 if (jsonData.success == "1")
                 {
-                    document.getElementByID("successAlert").style.visibility = "visible";
+                    alert("success")
                 }
                 else
                 {
