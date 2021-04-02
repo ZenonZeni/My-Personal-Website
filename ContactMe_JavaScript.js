@@ -1,6 +1,6 @@
 //Login javascript using AJAX, Jquery and JSON.
 $(document).ready(function() {
-    $('#contact-form1').submit(function(e) {
+    $('#contact-form').submit(function(e) {
         e.preventDefault();
         $.ajax({
             type: "POST",
