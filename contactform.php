@@ -12,6 +12,11 @@
       $headers .= "Reply-To: $visitor_email \r\n";
       $sent = mail($to,$email_subject,$txt,$headers);
 
-      echo "1";
+      if ($sent == 1){
+          echo "1";
+      }
+      else{
+          echo "0";
+      }
 
  ?>

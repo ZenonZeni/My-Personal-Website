@@ -14,11 +14,10 @@ $(document).ready(function() {
                 if (data == "1")
                 {
                     document.getElementById("successAlert").style.visibility = "visible";
-                    alert("success");
                 }
                 else
                 {
-                    alert('Failure' + response);
+                    alert('Failure contact christopher by email for more info');
                 }
            }
        });
