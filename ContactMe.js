@@ -18,7 +18,7 @@ $(document).ready(function() {
                 }
                 else
                 {
-                    alert('Failure');
+                    alert('Failure' + response);
                 }
            }
        });
