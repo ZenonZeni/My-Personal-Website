@@ -13,7 +13,7 @@ $(document).ready(function() {
                 // let's redirect
                 if (data == "1")
                 {
-                    document.getElementByID("successAlert").style.visibility = "visible";
+                    document.getElementById("successAlert").style.visibility = "visible";
                     alert("success");
                 }
                 else
