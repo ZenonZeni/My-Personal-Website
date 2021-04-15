@@ -1,0 +1,181 @@
+<!--by:Christopher Nguyen | 216213332 -->
+<!--Product Page -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="slidingmenu.css">
+    <script type="text/javascript" src="autoSearch.js"></script>
+    <title>
+      Product Page
+    </title>
+
+    <script>
+
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "340px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0px";
+      }
+
+    </script>
+
+    <style>
+      .stackedimage{
+        height:auto; width:28vw;
+      }
+      .image{
+        width:24vw;
+      }
+
+      @media screen and (max-width:1050px) {
+        .stackedimage{
+          height:450px; width:500px;
+        }
+        .image{
+          width: 400px;
+        }
+      }
+
+      @media screen and (max-width:500px) {
+        .stackedimage{
+          height:250px; width:320px;
+        }
+        .image{
+
+          width: 200px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+      <div id="mySidepanel" class="cart">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a> <u> Cart </u> </a>
+      </div>
+
+      <!--Navigation bar done by Christopher N-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img src="images/rocket.png" style="height:50px; padding-right: 10px;">
+          <a class="navbar-brand" href="ProductPage.html">Simple Technology Solutions</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="ProductPage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">Login Page</a>
+              </li>
+            </ul>
+          </div>
+            <div class="d-flex" style="padding-top:1px;">
+              <div style="padding-right: 1vw;">
+                <div class="dropdown">
+                  <input type="text" placeholder="Search.." style="width:200px;" id="myInput" name="myInput" onkeyup="filterFunction()" onfocus="myFunction()" onblur="myFunction()">
+                  <div id="myDropdown" class="dropdown-content" style="z-index: 4;">
+                      <!--Insert recommendations and suggestion elements here using ajax -->
+                  </div>
+                </div>
+              </div>
+                <script type="text/javascript" src="itemSearch.js"></script>
+              <button class="btn btn-outline-success me-2" onclick="openNav()"><i style="font-size:24px; width: 50px;" class="fa">&#xf07a;</i></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+          <div class="container">
+              <div class ="row" style="padding-top:15px;">
+                  <div class="col-lg-6" style="position:relative;">
+                      <div class="stackedimage">
+                        <script type="text/javascript" src="stackimage.js"> </script>
+                        <img  width=100% src="images/macbookair.png" id="1" class="image"  onClick="moveimage(1)" style="position:relative; top:0px; left:0px;  z-index: 1;">
+                        <img  width=100% src="images/macbook2.png" id="2" class="image"   onClick="moveimage(2)" style="position:absolute; top:35px; left: 35px;  z-index: 2;">
+                        <img  width=100% src="images/macbook.png" id="3" class="image"   onClick="moveimage(3)" style="position:absolute; top:75px;left:75px;  z-index: 3;">
+                      </div>
+                  </div>
+                  <div class="col-lg-6" style="margin-top: 30px">
+                      <div>
+                          <h2>Apple MacBook</h2>
+                          <ul>
+                              <li>
+                                  Apple-designed M1 chip for a giant leap in CPU, GPU, and machine-learning performance
+                              </li>
+                              <li>
+                                  8-core CPU delivers up to 2.8 times faster performance to fly through workflows quicker than ever
+                              </li>
+                              <li>
+                                  16-core Neural Engine for advanced machine learning
+                              </li>
+                              <li>
+                                  13.3-inch Retina display with 500 nits of brightness for vibrant colours and incredible image detail
+                              </li>
+                          </ul>
+                      </div>
+                      <div>
+                          <h3> Laptop Model <h3>
+                              <select name="laptop" id="laptop" method="post">
+                                  <option name="model1" id="model1" value="Select">Select a Model</option>
+                                  <option name="model2" id="model2" value="MacBookAir">MacBookAir</option>
+                                  <option name="model3" id="model3" value="MacBookPro">MacBookPro</option>
+                              </select>
+                              <script type="text/javascript" src="product.js"></script>
+                          <h3>Storage</h3>
+                          <div>
+                            <select name="storage" id="storage">
+                                <!--DOM Node Child Insert-->
+                            </select>
+                          </div>
+                          <h3>Memory</h3>
+                          <div>
+                              <select name="memory" id="memory">
+                                  <!--DOM Node Child Insert-->
+                              </select>
+                          </div>
+                      </div>
+                      <div class="row" style="margin-top: 20px">
+                          <div class="col-md-6">
+                              <button class="btn btn-secondary" style="width: 100%" onClick="addCart(); openNav();">ADD TO CART</button>
+                         </div>
+                         <script type="text/javascript" src="addToCart.js"></script>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container">
+              <h3>Product Recommedations</h3>
+              <div class="row" style="margin-top: 20px"/>
+                  <div class="col-md-4">
+                      <img width="70%" src="images/imac.jpeg">
+                  </div>
+                  <div class="col-md-4">
+                      <img width="75%" src="images/MacbookAir.jpg">
+                  </div>
+                  <div class="col-md-4">
+                      <img width="75%" src="images/airpods.jpeg">
+                  </div>
+              </div>
+          </div>
+
+      <!--Bottom contact us Container done by Christopher -->
+      <center>
+      <div class="container-fluid" style="background-color: #1a1e21; margin-bottom: 0px; padding-bottom:10px;">
+        <p><span class="glyphicon glyphicon-shopping-cart"></span></p>
+        <h1 style="color: white; padding-top:5px;">Contact Us</h1>
+        <p style="color: white; padding-top:5px;">All content used on this webpage is for educational purposes for ITEC 3020 Web Technologies</p>
+        <p style="color: white; padding-top:5px;">Christopher Nguyen at zenon@my.yorku.ca | Student No: 216213332</p>
+      </div>
+    </center>
+  </body>
+</html>

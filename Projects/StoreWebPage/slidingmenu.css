@@ -1,0 +1,66 @@
+
+/* ---CSS for collapsing side bar----- */
+/*-The-sidepanel-menu-*/
+#mySidepanel{
+	height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#mySidepanel a {
+	padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #f1f1f1;
+}
+
+#mySidepanel .closebtn {
+	position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: auto;
+  background-color: #black;
+  color: white;
+	border: none;
+	text-align: center;
+	max-height:100%;
+	max-width:100%;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+@media screen and (max-width:1366px) {
+	#mySidepanel a {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.openbtn {
+		visibility: visible;
+	}
+
+	#mySidepanel a {
+		font-size: 16px;
+	}
+}
