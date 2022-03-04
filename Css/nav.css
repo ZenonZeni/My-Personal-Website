@@ -24,7 +24,7 @@ li{
 
 .customnav li button{
 	background-color: #181818;
-  color: white;
+	color: white;
 	font-size: 18px;
 	border: none;
 	text-align: center;
@@ -32,10 +32,14 @@ li{
 
 .navButtons{
 	background-color: #181818;
-  color: white;
+  	color: white;
 	font-size: 16px;
 	border: none;
 	text-decoration: none;
+}
+
+.navButtons:hover{
+	background-color: #313131;
 }
 
 @media screen and (max-width: 800px) {
