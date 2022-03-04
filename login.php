@@ -19,8 +19,8 @@
 
 <?php
 echo "<center><p>Login Page Under Development</p> 
-<input type="text" id="username" placeholder="username">
-<input type="text" id="password" placeholder="password"> </center>";
+<input type=\"text\" id=\"username\" placeholder=\"username\">
+<input type=\"text\" id=\"password\" placeholder=\"password\"> </center>";
 ?>
 
 </body>
