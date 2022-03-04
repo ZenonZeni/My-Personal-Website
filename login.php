@@ -20,6 +20,7 @@
 <?php
 echo "<center><p>Login Page Under Development</p> 
 <input type=\"text\" id=\"username\" placeholder=\"username\">
+<br>
 <input type=\"text\" id=\"password\" placeholder=\"password\"> </center>";
 ?>
 
