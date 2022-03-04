@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<h1>My first PHP page</h1>
+<center> <h1>Login</h1> </center>
 
 <?php
 echo "<center><p>Login Page Under Development</p></center>";
