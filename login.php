@@ -18,9 +18,9 @@
 <center> <h1>Login</h1> </center>
 
 <?php
-echo "<center><p>Login Page Under Development</p>";
-echo "<input type="text" id="username" placeholder="username">";
-echo "<input type="text" id="password" placeholder="password"> </center>";
+echo "<center><p>Login Page Under Development</p> 
+<input type="text" id="username" placeholder="username">
+<input type="text" id="password" placeholder="password"> </center>";
 ?>
 
 </body>
