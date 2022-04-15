@@ -15,6 +15,20 @@ session_start();
 			  gtag('js', new Date());
 			gtag('config', 'G-B889QJFVCJ');
 			</script>
+			<!---BOT--->
+			<script>
+			  window.watsonAssistantChatOptions = {
+				integrationID: "ca5e5bd2-6e90-40ab-8904-4f32574d5e7e", // The ID of this integration.
+				region: "us-east", // The region your integration is hosted in.
+				serviceInstanceID: "2f6077c8-eecd-4c98-85a6-cfc01f4155a6", // The ID of your service instance.
+				onLoad: function(instance) { instance.render(); }
+			  };
+			  setTimeout(function(){
+				const t=document.createElement('script');
+				t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+				document.head.appendChild(t);
+			  });
+			</script>
 			<link rel="icon" href="My-Personal-Website/Images/favicon.png">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
