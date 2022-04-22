@@ -15,7 +15,7 @@ $password = $_POST["password"];
 if(!empty($_POST["login"])) {
 	$sql = "Select * from Account where username = '" . $username . "'";
     if(!isset($_COOKIE["member_login"])) {
-            $sql .= " AND password = '" . $password . "';";
+            $sql .= " AND userpassword = '" . $password . "';";
 	}
     $result = mysqli_query($conn,$sql);
 	$user = mysqli_fetch_array($result);
