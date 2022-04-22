@@ -1,5 +1,5 @@
 <?php
-include 'sqli_connect.php';
+require_once('sqli_connect.php');
 
 session_start();
 $username = $_POST["username"];
