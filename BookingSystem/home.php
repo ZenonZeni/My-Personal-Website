@@ -1,9 +1,14 @@
 <?php
-// Start the session
 session_start();
 
+if($_SESSION["member_id"]== null){
+	header('location:../login.php');
+}
+
+echo 'Welcome ' . $_SESSION["member_id"] . ' the system does not have any booking interface or logic <br>';
+echo 'So, you have to implement it';
+
 ?>
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -32,33 +37,14 @@ session_start();
 			<link rel="icon" href="My-Personal-Website/Images/favicon.png">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-			<title> Login </title>
+			<title> Booking Home </title>
 			<link rel="icon" href="Images/favicon.png">
 </head>
 <body>
 
-<div id="title" style="padding-top:10%;">
-
-<center> <h1>Booking System</h1> </center>
-<center> <h2>Under Testing (NO SIGN UP)</h2> </center>
-
-</div>
-
-<!--Login Form-->
 <div style="padding-left:25%; padding-right:25%;">
-<form class="form-horizontal" action="BookingSystem/verifyLogin.php" method="POST">
-  <div class="form-group">
-    <label for="text">Username:</label>
-    <input type="text" class="form-control" value="<?php if(isset($_COOKIE["member_login"])) { echo $_COOKIE["member_login"];}?>" id="username" name="username">
-  </div>
-  <div class="form-group" style="padding-top:10px;">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="password" name="password">
-  </div>
-  <div class="checkbox" style="padding-top:10px;">
-    <label><input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["member_login"])) { echo checked; } ?> > Remember me</label>
-  </div>
-  <button type="submit" name="login" value="login" class="btn btn-primary">Submit</button>
+<form class="form-horizontal" action="logout.php" method="POST">
+  <button type="submit" name="logout" value="logout" class="btn btn-primary">Logout</button>
 </form>
 </div>
 
