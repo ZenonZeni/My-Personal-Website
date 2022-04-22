@@ -20,7 +20,7 @@ if(!empty($_POST["login"])) {
     $result = mysqli_query($conn,$sql);
 	$user = mysqli_fetch_array($result);
 	if($user) {
-			$_SESSION["member_id"] = $user["member_id"];
+			$_SESSION["member_id"] = $user["username"];
 			
 			if(!empty($_POST["remember"])) {
 				setcookie ("member_login",$username,time()+ (10 * 365 * 24 * 60 * 60));
