@@ -34,7 +34,8 @@ if(!empty($_POST["login"])) {
 				header('Location:home.php');
 			}
 	} else {
-		echo "Invalid Login <br>";
+		echo "Invalid Login - Redirecting to login Page in 5 Seconds<br>";
+		header( "refresh:5;url=../login.php" );
 	}
 }
 else{
