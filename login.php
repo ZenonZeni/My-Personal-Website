@@ -44,6 +44,7 @@ session_start();
 
 </div>
 
+<!--Login Form-->
 <div style="padding-left:25%; padding-right:25%;">
 <form class="form-horizontal" action="LoginSystem/verifyLogin.php" method="POST">
   <div class="form-group">
@@ -55,9 +56,9 @@ session_start();
     <input type="password" class="form-control" id="password" name="password">
   </div>
   <div class="checkbox" style="padding-top:10px;">
-    <label><input type="checkbox"> Remember me</label>
+    <label><input type="checkbox" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?>> Remember me</label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" name="login" value="login" class="btn btn-primary">Submit</button>
 </form>
 </div>
 
