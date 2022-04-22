@@ -24,14 +24,14 @@ if(!empty($_POST["login"])) {
 			if(!empty($_POST["remember"])) {
 				setcookie ("member_login",$username,time()+ (10 * 365 * 24 * 60 * 60));
 				echo "successful login REMEMBER " . time()+ (10 * 365 * 24 * 60 * 60);
-				header('Location:Home.php');
+				header('Location:home.php');
 			} else {
 				if(isset($_COOKIE["member_login"])) {
 					setcookie ("member_login","");
 					echo "SET Member Login";
 				}
 				echo "Sucessful Login";
-				header('Location:Home.php');
+				header('Location:home.php');
 			}
 	} else {
 		echo "Invalid Login <br>";
