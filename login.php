@@ -1,5 +1,5 @@
 <?php
-// Start the session
+//Start the session
 session_start();
 
 ?>
@@ -37,10 +37,10 @@ session_start();
 </head>
 <body>
 
-<div id="title" style="padding-top:10%;">
+<div id="title" style="padding-top:10%; text-align:center;">
 
-<center> <h1>Booking System</h1> </center>
-<center> <h2>Under Testing (NO SIGN UP)</h2> </center>
+<h1>Booking System</h1> 
+<h2>Under Testing (NO SIGN UP)</h2>
 
 </div>
 

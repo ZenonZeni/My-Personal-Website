@@ -21,6 +21,7 @@ if(!empty($_POST["login"])) {
 	$user = mysqli_fetch_array($result);
 	if($user) {
 			$_SESSION["username"] = $user["username"];
+			$_SESSION["email"] = $user["email"];
 			if(!empty($_POST["remember"])) {
 				setcookie ("user_login", $username, time()+ (86400 * 30), "/");
 				header('Location:home.php');

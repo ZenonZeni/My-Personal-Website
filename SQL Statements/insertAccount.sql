@@ -1,0 +1,1 @@
+insert into Account (firstName, lastName, username, userpassword, privillege, email) values('admin','admin','admin','password123!','A','chrisnguyen@zenonzeni.ca');

@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!-Root>
-<!-Please note to self that CSS comments are not the same as HTML Comments>
 <!--By: Christopher Nguyen  -->
 <html>
 	<head>
@@ -79,14 +77,11 @@
 			<li><button class="navButtons" style="color:white;" onclick="document.location='AboutMe.html'"> About Me </button> </li>
 			<li><button class="navButtons" style="color:white;" onclick="document.location='Projects Page Personal Website.html'"> Projects </button> </li>
 			<li><button class="navButtons" style="color:white;" onclick="document.location='ContactMe.html'"> Contact Me </button> </li>
-			<div>
-			<li style="float:right"><button class="navButtons" disabled href="#about">Projects</button></li>
-			</div>
+			<li style="float:right;"><button class="navButtons" disabled>Projects</button></li>
 		</ul>
 
 			<!--Slide show template used from w3 school -->
-			<div class="container-fluid" style="padding-top:6%; padding-bottom:300px;">
-					<center>
+			<div class="container-fluid" style="padding-top:3%; padding-bottom:125px; text-align:center;">
 						<div class="row" style="text-align:center;">
 							<h1> Project Slideshow </h1>
 						</div>
@@ -99,7 +94,7 @@
 										<div class="col" id="slideContainer">
 							    <img src="Images/program.png" class="mySlidesImage" style="width:100%;">
 									<div style="border-style: solid; color: #48484848; background-color: #48484848; padding:1%; ">
-										<p color="white" align="left"> Text Based Game</p>
+										<p align="left"> Text Based Game</p>
 										<p align="left"> To play it download the jar application file
 										<button onClick="document.location='Download/TheTreasureHunter.jar'" style="color:black;" download> Download
 										</button></p>
@@ -109,9 +104,9 @@
 
 							<div class="mySlides">
 									<div class="col" id="slideContainer">
-										<iframe src="Download/FeasibilityReport.pdf" align="center" class="mySlidesImage"></iframe>
+										<iframe src="Download/FeasibilityReport.pdf" class="mySlidesImage"></iframe>
 								<div style="border-style: solid; color: #48484848; background-color: #48484848; padding:1%; ">
-									<p color="white" align="left"> Preventing Online Cheating Feasibility Report</p>
+									<p align="left"> Preventing Online Cheating Feasibility Report</p>
 									<p align="left"> To click button to download/read the report
 									<button onClick="document.location='Download/FeasibilityReport.pdf'" style="color:black;" download> Download
 									</button></p>
@@ -123,7 +118,7 @@
 									<div class="col" id="slideContainer">
 							    <img src="Images/BMP.png" class="mySlidesImage" style="width:100%;">
 									<div style="border-style: solid; color: #48484848; background-color: #48484848; padding:1%;">
-										<p color="white" align="left"> Java Book Management Application</p>
+										<p align="left"> Java Book Management Application</p>
 										<p align="left"> You can download the application file
 										<button onClick="document.location='Download/TheBookProgram.jar'" style="color:black;" download> Download
 										</button></p>
@@ -135,7 +130,7 @@
 									<div class="col" class="slideImage" id="slideContainer">
 							    <img src="Images/website.png" class="mySlidesImage" style="width:100%;">
 									<div style="border-style: solid; color: #48484848; background-color: #48484848; padding:1%;">
-										<p color="white" align="left"> Prototype website </p>
+										<p align="left"> Prototype website </p>
 										<p align="left"> The prototypes:
 										<button onClick="document.location='https://marvelapp.com/prototype/53ad0bb/screen/74261651'" style="color:black;"> First prototype
 										</button>
@@ -159,7 +154,7 @@
 
 								<div class="mySlides">
 									<div class="col" class="slideImage" id="slideContainer">
-							    <iframe src="Images/guide.pdf" align="center" class="mySlidesImage"></iframe>
+							    <iframe src="Images/guide.pdf" style="text-align:center;" class="mySlidesImage"></iframe>
 									<div style="border-style: solid; color: #48484848; background-color: #48484848; padding:1%;">
 										<p align="left"> Published Ifixit Guide:
 											<p align="left"> To go to the ifixit guide. Click
@@ -193,13 +188,11 @@
 									<span class="dot" onclick="currentSlide(7)"></span>
 									</div>
 							</div>
-					</center>
 					<script src="JavaScript/slideshow.js"> </script>
 			</div>
 
-		<center>
 
-			<div class="bottomContainer">
+			<div class="bottomContainer" style="text-align:center;">
 				<p> Contact Information </p>
 				<p> chrisnguyen@zenonzeni.ca |
 				<a href="https://github.com/zenonzeni" style="color:white;"> GitHub</a> |
@@ -208,7 +201,6 @@
 				</p>
 			</div>
 
-		</center>
 	</div>
 	</body>
 </html>
