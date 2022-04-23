@@ -5,10 +5,10 @@ if($_SESSION["member_id"]== null){
 	header('location:../login.php');
 }
 
-echo 'Welcome ' . $_SESSION["member_id"] . ' the system does not have any booking interface or logic <br>';
-echo 'So, you have to implement it';
+
 
 ?>
+
 <html>
 <head>
 <meta charset="utf-8">
@@ -20,33 +20,68 @@ echo 'So, you have to implement it';
 			  gtag('js', new Date());
 			gtag('config', 'G-B889QJFVCJ');
 			</script>
-			<!---BOT--->
-			<script>
-			  window.watsonAssistantChatOptions = {
-				integrationID: "ca5e5bd2-6e90-40ab-8904-4f32574d5e7e", // The ID of this integration.
-				region: "us-east", // The region your integration is hosted in.
-				serviceInstanceID: "2f6077c8-eecd-4c98-85a6-cfc01f4155a6", // The ID of your service instance.
-				onLoad: function(instance) { instance.render(); }
-			  };
-			  setTimeout(function(){
-				const t=document.createElement('script');
-				t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-				document.head.appendChild(t);
-			  });
+			
+			<script type="text/javascript">
+				function openNav() {
+					document.getElementById("mySidepanel").style.width = "300px";
+				}
+				function closeNav() {
+					document.getElementById("mySidepanel").style.width = "0px";
+				}
 			</script>
+			
 			<link rel="icon" href="My-Personal-Website/Images/favicon.png">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 			<title> Booking Home </title>
-			<link rel="icon" href="Images/favicon.png">
+			<link rel="icon" href="../Images/favicon.png">
+			<link rel="stylesheet" href="../Css/default.css">
+			<link rel="stylesheet" href="../Css/bottom.css">
+			<link rel="stylesheet" href="../Css/nav.css">
+			<link rel="stylesheet" href="../Css/slidingmenu.css">
+			<link rel="stylesheet" href="../Css/page.css">
+			<link rel="stylesheet" href="../Css/scroll.css">
+			<link rel="icon" href="../Images/favicon.png">
+			
+			<style>
+				body{
+					background-color: white;
+				}
+				p{
+					color:black;
+				}
+			</style>
 </head>
 <body>
+<div class="page">
 
-<div style="padding-left:25%; padding-right:25%;">
-<form class="form-horizontal" action="logout.php" method="POST">
-  <button type="submit" name="logout" value="logout" class="btn btn-primary">Logout</button>
-</form>
+			<div id="mySidepanel">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="" disabled>Home</a>
+				<form action="logout.php" method="POST" id="logout">
+				<a href="javascript:{}" onclick="document.getElementById('logout').submit(); return false;">LogOut</a>
+				</form>
+			</div>
+
+			<ul class="customnav">
+				<li><button class="openbtn" onclick="openNav()"> <!--&#8801; I removed a symbol remove comment to add it again--> Menu</button> </li>
+				<li><button class="navButtons" style="color:white;" onclick="document.location='../index.html'" disabled> Home </button> </li>
+				<div>
+				<li style="float:right"> <form action="logout.php" method="POST"><button class="navButtons" type="submit" name="logout" value="logout">Logout</button></form></li>
+				<li style="float:right"> <label class="navButtons" disabled href="#about"><?php echo $_SESSION["member_id"]; ?></label></li>
+				</div>
+			</ul>
+			
+			<div id="page2" style="padding-top:2.5%; padding-left:2.5%">
+			
+			<div>
+				<?php
+					echo '<center><p>Welcome ' . $_SESSION["member_id"] . ' the system does not have any booking interface or logic </p></center>';
+				?>
+			</div>
+
+			</div>
+
 </div>
-
 </body>
 </html>
