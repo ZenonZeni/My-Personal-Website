@@ -1,11 +1,9 @@
 <?php
 session_start();
 
-if($_SESSION["member_id"]== null){
+if(!isset($_SESSION["username"])OR trim( $_SESSION["username"] ) == ""){
 	header('location:../login.php');
 }
-
-
 
 ?>
 

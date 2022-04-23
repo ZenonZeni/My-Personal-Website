@@ -1,7 +1,7 @@
 <?php
 require_once('sqli_connect.php');
-
 session_start();
+
 $username = $_POST["username"];
 $password = $_POST["password"];
 
@@ -13,22 +13,21 @@ $password = $_POST["password"];
 //}
 
 if(!empty($_POST["login"])) {
+	//SQL Query Forming
 	$sql = "Select * from Account where username = '" . $username . "'";
-    if(!isset($_COOKIE["member_login"])) {
-            $sql .= " AND userpassword = '" . $password . "';";
-	}
+    $sql .= " AND userpassword = '" . $password . "';";
+	//MYSQLI connection and sql statement execution
     $result = mysqli_query($conn,$sql);
 	$user = mysqli_fetch_array($result);
 	if($user) {
-			$_SESSION["member_id"] = $user["username"];
+			$_SESSION["username"] = $user["username"];
 			if(!empty($_POST["remember"])) {
-				setcookie ("member_login",$username,time()+ (10 * 365 * 24 * 60 * 60));
-				echo "successful login REMEMBER " . time()+ (10 * 365 * 24 * 60 * 60);
+				setcookie ("user_login", $username, time()+ (86400 * 30), "/");
 				header('Location:home.php');
 			} else {
-				if(isset($_COOKIE["member_login"])) {
-					setcookie ("member_login","");
-					echo "SET Member Login";
+				if(isset($_COOKIE["user_login"])) {
+					setcookie("user_login"," ", time()- (86400 * 30), "/");
+					$user = null;
 				}
 				echo "Sucessful Login";
 				header('Location:home.php');

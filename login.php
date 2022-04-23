@@ -49,14 +49,14 @@ session_start();
 <form class="form-horizontal" action="BookingSystem/verifyLogin.php" method="POST">
   <div class="form-group">
     <label for="text">Username:</label>
-    <input type="text" class="form-control" value="<?php if(isset($_COOKIE["member_login"])) { echo $_COOKIE["member_login"];}?>" id="username" name="username">
+    <input type="text" class="form-control" value="<?php if(isset($_COOKIE["user_login"])) {echo $_COOKIE["user_login"];}?>" id="username" name="username">
   </div>
   <div class="form-group" style="padding-top:10px;">
     <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="password" name="password">
+    <input type="password" class="form-control" id="password" name="password" >
   </div>
   <div class="checkbox" style="padding-top:10px;">
-    <label><input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["member_login"])) { echo checked; } ?> > Remember me</label>
+    <label><input type="checkbox" name="remember" id="remember"  <?php if(isset($_COOKIE["user_login"])AND trim($_COOKIE['user_login'] ) != "") { ?> checked <?php } ?>  > Remember me</label>
   </div>
   <button type="submit" name="login" value="login" class="btn btn-primary">Submit</button>
 </form>
