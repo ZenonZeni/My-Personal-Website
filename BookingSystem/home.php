@@ -66,7 +66,7 @@ if(!isset($_SESSION["username"])OR trim( $_SESSION["username"] ) == ""){
 				<li><button class="navButtons" style="color:white;" onclick="document.location='../index.html'" disabled> Home </button> </li>
 				<div>
 				<li style="float:right"> <form action="logout.php" method="POST"><button class="navButtons" type="submit" name="logout" value="logout">Logout</button></form></li>
-				<li style="float:right"> <label class="navButtons" disabled href="#about"><?php echo $_SESSION["member_id"]; ?></label></li>
+				<li style="float:right"> <label class="navButtons" disabled href="#about"><?php echo $_SESSION["username"]; ?></label></li>
 				</div>
 			</ul>
 			
@@ -74,7 +74,7 @@ if(!isset($_SESSION["username"])OR trim( $_SESSION["username"] ) == ""){
 			
 			<div>
 				<?php
-					echo '<center><p>Welcome ' . $_SESSION["member_id"] . ' the system does not have any booking interface or logic </p></center>';
+					echo '<center><p>Welcome ' . $_SESSION["username"] . ' the system does not have any booking interface or logic </p></center>';
 				?>
 			</div>
 
