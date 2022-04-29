@@ -37,7 +37,7 @@ session_start();
 </head>
 <body>
 
-<div id="title" style="padding-top:10%; text-align:center;">
+<div id="title" style="padding-top:7.5%; text-align:center;">
 
 <h1>Booking System</h1> 
 <h2>Under Testing (NO SIGN UP)</h2>
@@ -45,7 +45,7 @@ session_start();
 </div>
 
 <!--Login Form-->
-<div style="padding-left:25%; padding-right:25%;">
+<div style="padding-left:15%; padding-right:15%;">
 <form class="form-horizontal" action="BookingSystem/verifyLogin.php" method="POST">
   <div class="form-group">
     <label for="text">Username:</label>

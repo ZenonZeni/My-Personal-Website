@@ -2,13 +2,13 @@
 session_start();
 include('BookingClass.php');
 
-if(!isset($_SESSION["username"])OR trim( $_SESSION["username"] ) == ""){
-	header('location:../login.php');
+if(!isset($_SESSION["username"]) && $_SESSION["privillege"] == "A" OR trim( $_SESSION["username"] ) == ""){
+    header('location:../home.php');
 }
 else{
-$booking = new BookingClass($_SESSION["userID"],$_SESSION["username"]);
+    $booking = new BookingClass($_SESSION["userID"],$_SESSION["username"]);
+    $booking ->setPriv($_SESSION["privillege"]);
 }
-
 ?>
 
 <html>
@@ -85,89 +85,6 @@ $booking = new BookingClass($_SESSION["userID"],$_SESSION["username"]);
 				?>
 			</div>
 			
-			<!---user booking-->
-			<div class="container" style="border-style:solid;" >
-				<div class="row" id="ub0" style="text-decoration: underline;"> 
-					<div class="auto col">
-						Your Bookings
-					</div>
-					<div class="auto col">
-						Date
-					</div>
-					<div class="auto col">
-						Hours
-					</div>
-					<div class="auto col">
-						Lesson Plan
-					</div>
-					<div class="auto col">
-						Cancel
-					</div>
-				</div>
-				<div class="row"id="ub0"> 
-					<div class="auto col">
-						Sample Lesson
-					</div>
-					<div class="auto col">
-						2000-11-17
-					</div>
-					<div class="auto col">
-						2 
-					</div>
-					<div class="auto col">
-						ITEC 1620 
-					</div>
-					<div class="auto col">
-						<button type="submit"> Cancel </button>
-					</div>
-				</div>
-				<?php 
-				print $booking -> printLessons();
-				?>
-			</div>
-			
-			<p></p>
-			
-			<!---Available Booking-->
-			<div class="container" style="border-style:solid;">
-				<div class="row" id="ab0"> 
-					<div class="auto col" style="text-decoration: underline;">
-						Available Booking Slots
-					</div>
-					<div class="auto col">
-						Available Date
-					</div>
-					<div class="auto col">
-						Available Time
-					</div>
-					<div class="auto col">
-						Choose Lesson
-					</div>
-					<div class="auto col">
-						Book
-					</div>
-				</div>
-				<div class="row" id="ab0"> 
-					<div class="auto col">
-						Available Lesson
-					</div>
-					<div class="auto col">
-						2000-11-30
-					</div>
-					<div class="auto col">
-						9:00PM
-					</div>
-					<div class="auto col">
-						Choose Lesson
-					</div>
-					<div class="auto col">
-						<button type="submit"> Book </button>
-					</div>
-				</div>
-				<?php 
-				print $booking -> printAvailableLessons();
-				?>
-			</div>
 
 			</div>
 			<!--- Content ends here-->

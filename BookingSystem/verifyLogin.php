@@ -1,5 +1,5 @@
 <?php
-require_once('sqli_connect.php');
+include('sqli_connect.php');
 session_start();
 
 $username = $_POST["username"];
@@ -20,8 +20,10 @@ if(!empty($_POST["login"])) {
     $result = mysqli_query($conn,$sql);
 	$user = mysqli_fetch_array($result);
 	if($user) {
+	        $_SESSION["userID"] = $user["userID"];
 			$_SESSION["username"] = $user["username"];
 			$_SESSION["email"] = $user["email"];
+			$_SESSION["privillege"] = $user["privillege"];
 			if(!empty($_POST["remember"])) {
 				setcookie ("user_login", $username, time()+ (86400 * 30), "/");
 				header('Location:home.php');
@@ -34,7 +36,7 @@ if(!empty($_POST["login"])) {
 				header('Location:home.php');
 			}
 	} else {
-		echo "<center> Invalid Login - Redirecting to login Page in 5 Seconds <center><br>";
+		echo "<div style="."'"."text-align:center;"."'"."> Invalid Login - Redirecting to login Page in 5 Seconds <div><br>";
 		header( "refresh:5;url=../login.php" );
 	}
 }
