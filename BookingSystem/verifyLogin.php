@@ -15,7 +15,7 @@ $password = $_POST["password"];
 if(!empty($_POST["login"])) {
 	//SQL Query Forming
 	$sql = "Select * from Account where username = '" . $username . "'";
-    $sql .= " AND userpassword = '" . $password . "';";
+    $sql .= " AND BINARY userpassword = '" . $password . "';";
 	//MYSQLI connection and sql statement execution
     $result = mysqli_query($conn,$sql);
 	$user = mysqli_fetch_array($result);
