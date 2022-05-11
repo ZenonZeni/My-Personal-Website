@@ -2,6 +2,7 @@
 //Start the session
 session_start();
 
+header("https://zenonzeni.com/BookingSystem/");
 ?>
 <!DOCTYPE html>
 <html>
