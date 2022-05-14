@@ -13,6 +13,7 @@
 			</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="Css/default.css">
 		<link rel="stylesheet" href="Css/bottom.css">
 		<link rel="stylesheet" href="Css/nav.css">
@@ -33,6 +34,11 @@
 				document.head.appendChild(t);
 			  });
 		</script>
+		<style>
+		.dropdown-item:active {
+				background-color: grey !important;
+		}
+		</style>
 	</head>
 
 	<body>
@@ -52,6 +58,18 @@
 				<li><button class="navButtons" style="color:white;" onclick="document.location='AboutMe.html'"> About Me </button> </li>
 				<li><button class="navButtons" style="color:white;" onclick="document.location='Projects Page Personal Website.html'"> Projects </button> </li>
 				<li><button class="navButtons" style="color:white;" onclick="document.location='ContactMe.html'"> Contact Me </button> </li>
+				<li>
+				<div class="dropdown">
+					<!--Example of stacking two classes navButtons(Custom CSS) with bootstrap dropdown-toggle-->
+				  <button type="button" class="navButtons dropdown-toggle" data-bs-toggle="dropdown"> 
+					Services
+				  </button>
+				  <ul class="dropdown-menu" style="background-color: #e7e7e7;">
+					<li><a class="dropdown-item" href="#" style="color:black;">Web Development</a></li>
+					<li><a class="dropdown-item" href="#" style="color:black;">Education</a></li>
+				  </ul>
+				</div>
+				</li>
 				<div>
 				<li style="float:right"><button class="navButtons" disabled href="#about">Contact Me</button></li>
 				</div>
