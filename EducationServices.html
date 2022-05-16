@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!---By Christopher Nguyen-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<title> Contact Me </title>
+			<script type="text/javascript">
+				function openNav() {
+					document.getElementById("mySidepanel").style.width = "300px";
+				}
+				function closeNav() {
+					document.getElementById("mySidepanel").style.width = "0px";
+				}
+			</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="Css/default.css">
+		<link rel="stylesheet" href="Css/bottom.css">
+		<link rel="stylesheet" href="Css/nav.css">
+		<link rel="stylesheet" href="Css/slidingmenu.css">
+		<link rel="stylesheet" href="Css/page.css">
+		<link rel="stylesheet" href="Css/scroll.css">
+		<link rel="stylesheet" href="Css/slidemenudropdown.css">
+		<link rel="stylesheet" href="Css/navdropdown.css">
+			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" href="Images/favicon.png">
+		<script>
+			  window.watsonAssistantChatOptions = {
+				integrationID: "ca5e5bd2-6e90-40ab-8904-4f32574d5e7e", // The ID of this integration.
+				region: "us-east", // The region your integration is hosted in.
+				serviceInstanceID: "2f6077c8-eecd-4c98-85a6-cfc01f4155a6", // The ID of your service instance.
+				onLoad: function(instance) { instance.render(); }
+			  };
+			  setTimeout(function(){
+				const t=document.createElement('script');
+				t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+				document.head.appendChild(t);
+			  });
+		</script>
+	</head>
+
+	<body>
+		<div class="page">
+
+			<div id="mySidepanel">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="../index.html">Home</a>
+				<a href="Projects Page Personal Website.html">Projects</a>
+				<a href="AboutMe.html">AboutMe</a>
+				<a href="ContactMe.html">Contact Me</a>
+				<a href="javascript:{}" class="dropdown-btn" onclick="#">
+					Services<i class="fa fa-caret-down" style="padding-top:5px;"></i>
+				</a>
+				<div class="dropdown-container">
+					<a href="WebDevelopment.html">Web Development</a>
+					<a href="EducationServices.html">Education</a>
+				</div>
+				  <!--- Dropdown side menu script-->
+				  <script>
+				  var dropdown = document.getElementsByClassName("dropdown-btn");
+					var i;
+
+					for (i = 0; i < dropdown.length; i++) {
+					  dropdown[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var dropdownContent = this.nextElementSibling;
+						if (dropdownContent.style.display === "block") {
+						  dropdownContent.style.display = "none";
+						} else {
+						  dropdownContent.style.display = "block";
+						}
+					  });
+					}
+				  </script>
+				  <!---menu script ends here -->
+			</div>
+
+			<ul class="customnav">
+				<li><button class="openbtn" onclick="openNav()"> <!--&#8801; I removed a symbol remove comment to add it again--> Menu</button> </li>
+				<li><button class="navButtons" style="color:white;" onclick="document.location='../index.html'"> Home </button> </li>
+				<li><button class="navButtons" style="color:white;" onclick="document.location='AboutMe.html'"> About Me </button> </li>
+				<li><button class="navButtons" style="color:white;" onclick="document.location='Projects Page Personal Website.html'"> Projects </button> </li>
+				<li><button class="navButtons" style="color:white;" onclick="document.location='ContactMe.html'"> Contact Me </button> </li>
+				<li>
+				<div class="dropdown">
+					<!--Example of stacking two classes navButtons(Custom CSS) with bootstrap dropdown-toggle-->
+				  <button type="button" class="navButtons dropdown-toggle" data-bs-toggle="dropdown"> 
+					Services
+				  </button>
+				  <ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="WebDevelopment.html" >Web Development</a></li>
+					<li><a class="dropdown-item" href="EducationServices.html">Education</a></li>
+				  </ul>
+				</div>
+				</li>
+				<div>
+				<li style="float:right"><button class="navButtons" disabled href="#about">Contact Me</button></li>
+				</div>
+			</ul>
+			
+			<!---Content Starts here -->
+			<div class="container" style=" padding-top: 5%; padding-left:5%; padding-right:5%; padding-bottom:1px; text-align: center;">
+				<p> Page Being Updated </p>
+				
+			</div>
+			<!----Content Ends Here --->
+
+			<div class="bottomContainer" style="text-align:center;">
+			<p> Contact Information </p>
+			<p> chrisnguyen@zenonzeni.ca |
+			<a href="https://github.com/zenonzeni" style="color:white;"> GitHub</a> |
+			<a href="https://www.linkedin.com/in/zenonzeni/ " style="color:white;"> Linkedin</a> |
+			<a href="https://discord.gg/uTQqtxTPZ8" style="color:white;"> Discord</a>
+			</p>
+			</div>
+</body>
+</html>

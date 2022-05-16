@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<!---By Christopher Nguyen-->
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -20,6 +22,10 @@
 		<link rel="stylesheet" href="Css/slidingmenu.css">
 		<link rel="stylesheet" href="Css/page.css">
 		<link rel="stylesheet" href="Css/scroll.css">
+		<link rel="stylesheet" href="Css/slidemenudropdown.css">
+		<link rel="stylesheet" href="Css/navdropdown.css">
+			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="icon" href="Images/favicon.png">
 		<script>
 			  window.watsonAssistantChatOptions = {
@@ -34,11 +40,6 @@
 				document.head.appendChild(t);
 			  });
 		</script>
-		<style>
-		.dropdown-item:active {
-				background-color: grey !important;
-		}
-		</style>
 	</head>
 
 	<body>
@@ -50,6 +51,31 @@
 				<a href="Projects Page Personal Website.html">Projects</a>
 				<a href="AboutMe.html">AboutMe</a>
 				<a href="ContactMe.html">Contact Me</a>
+				<a href="javascript:{}" class="dropdown-btn" onclick="#">
+					Dropdown<i class="fa fa-caret-down" style="padding-top:5px;"></i>
+				</a>
+				<div class="dropdown-container">
+					<a href="WebDevelopment.html">Web Development</a>
+					<a href="EducationServices.html">Education</a>
+				</div>
+				  <!--- Dropdown side menu script-->
+				  <script>
+				  var dropdown = document.getElementsByClassName("dropdown-btn");
+					var i;
+
+					for (i = 0; i < dropdown.length; i++) {
+					  dropdown[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var dropdownContent = this.nextElementSibling;
+						if (dropdownContent.style.display === "block") {
+						  dropdownContent.style.display = "none";
+						} else {
+						  dropdownContent.style.display = "block";
+						}
+					  });
+					}
+				  </script>
+				  <!---menu script ends here -->
 			</div>
 
 			<ul class="customnav">
@@ -64,9 +90,9 @@
 				  <button type="button" class="navButtons dropdown-toggle" data-bs-toggle="dropdown"> 
 					Services
 				  </button>
-				  <ul class="dropdown-menu" style="background-color: #e7e7e7;">
-					<li><a class="dropdown-item" href="#" style="color:black;">Web Development</a></li>
-					<li><a class="dropdown-item" href="#" style="color:black;">Education</a></li>
+				  <ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="WebDevelopment.html">Web Development</a></li>
+					<li><a class="dropdown-item" href="EducationServices.html">Education</a></li>
 				  </ul>
 				</div>
 				</li>
