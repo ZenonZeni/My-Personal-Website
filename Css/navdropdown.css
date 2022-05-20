@@ -3,11 +3,11 @@
 }
 
 .dropdown-menu{
-				background-color: #121212 !important;
+				background-color: #212121 !important;
 }
 
 .dropdown-item:hover {
-				background-color: #121212 !important;
+				background-color: #grey !important;
 }
 
 .dropdown-item{
