@@ -42,7 +42,7 @@ li{
 	background-color: #313131;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1151px) {
   .customnav li .navButtons{display: none;}
   .openbtn {
     float: left;
@@ -50,7 +50,7 @@ li{
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1151px) {
   .customnav.responsive {position: relative;}
   .openbtn {
     position: relative;
