@@ -19,3 +19,8 @@
 					  display: block;
 					  transition: 0.3s;
 				}
+				
+				.dropdown-item:hover{
+					background-color: #212121;
+					color: white;
+				}
