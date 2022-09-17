@@ -2,7 +2,7 @@
 //Start the session
 session_start();
 
-header("Location: https://zenonzeni.com/BookingSystem/");
+header("Location: zenonzeni.com/BookingSystem/");
 ?>
 <!DOCTYPE html>
 <html>
