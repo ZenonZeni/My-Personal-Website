@@ -4,7 +4,7 @@ $(document).ready(function() {
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: 'contactform.php',
+            url: 'https://zenonzeni.com/EmailSystem/contactform',
             data: $(this).serialize(),
             success: function(response)
             {
