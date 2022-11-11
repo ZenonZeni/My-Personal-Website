@@ -43,6 +43,15 @@ li{
 	background-color: #313131;
 }
 
+.navButtonsSpecial{
+	background-color: #181818;
+  	color: white;
+	font-size: 16px;
+	border: none;
+	text-decoration: none;
+	display: inline;
+}
+
 @media screen and (max-width: 1151px) {
   .customnav li .navButtons{display: none;}
   .openbtn {
@@ -63,4 +72,17 @@ li{
     display: block;
     text-align: left;
   }
+}
+
+@media screen and (max-width: 360px) {
+  .customnav li .navButtons{
+	  display: none;
+  }
+  .navLeftButtonSlots{
+	  display: none;
+  }
+   .customnav{
+	   height:50px;
+   }
+  
 }
