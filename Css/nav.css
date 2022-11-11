@@ -58,6 +58,9 @@ li{
     float: left;
     display: block;
   }
+  .navLeftButtonSlots{
+	  display: none;
+  }
 }
 
 @media screen and (max-width: 1151px) {
@@ -66,6 +69,9 @@ li{
     position: relative;
     left: 0;
     top: 0;
+  }
+  .navLeftButtonSlots{
+	  display: none;
   }
   .customnav.responsive button{
     float: none;
