@@ -92,3 +92,21 @@ li{
    }
   
 }
+
+@media screen and (max-width: 208px) {
+  .customnav li .navButtons{
+	  display: none;
+  }
+  .navLeftButtonSlots{
+	  display: none;
+  }
+   .customnav{
+	   height:50px;
+   }
+   
+   .navButtonsSpecial{
+	   display: none;
+   }
+  
+}
+
