@@ -101,16 +101,49 @@
 				  <!---menu script ends here -->
 			</div>
 
+			<div id="mySidepanel">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="../index.html">Home</a>
+				<a href="Projects Page Personal Website.html">Projects</a>
+				<a href="AboutMe.html">About Me</a>
+				<a href="ContactMe.html">Contact Me</a>
+				<a href="login.php">Sign In</a>
+				<a href="javascript:{}" class="dropdown-btn" onclick="#" style="display:none;>
+					Services<i class="fa fa-caret-down" style="padding-top:5px;"></i>
+				</a>
+				<div class="dropdown-container">
+					<a href="EducationServices.html">Education</a>
+				</div>
+				  <!--- Dropdown side menu script-->
+				  <script>
+				  var dropdown = document.getElementsByClassName("dropdown-btn");
+					var i;
+
+					for (i = 0; i < dropdown.length; i++) {
+					  dropdown[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var dropdownContent = this.nextElementSibling;
+						if (dropdownContent.style.display === "block") {
+						  dropdownContent.style.display = "none";
+						} else {
+						  dropdownContent.style.display = "block";
+						}
+					  });
+					}
+				  </script>
+				  <!---menu script ends here -->
+			</div>
+
 			<ul class="customnav">
-			 	<li class=""><button class="openbtn" onclick="openNav()"> <!--&#8801; I removed a symbol remove comment to add it again--> <i class="fa fa-bars"></i></button> </li>
+			 	<li><button class="openbtn" onclick="openNav()"> <!--&#8801; I removed a symbol remove comment to add it again--><i class="fa fa-bars"></i> </li>
 				<li class="navLeftButtonSlots"><button class="navButtons" style="color:white;" onclick="document.location='../index.html'"> Home </button> </li>
 				<li class="navLeftButtonSlots"><button class="navButtons" style="color:white;" onclick="document.location='AboutMe.html'"> About Me </button> </li>
 				<li class="navLeftButtonSlots"><button class="navButtons" style="color:white;" onclick="document.location='Projects Page Personal Website.html'"> Projects </button> </li>
 				<li class="navLeftButtonSlots"><button class="navButtons" style="color:white;" onclick="document.location='ContactMe.html'"> Contact Me </button> </li>
 				<li>
-				<div class="dropdown">
+				<div class="dropdown" >
 					<!--Example of stacking two classes navButtons(Custom CSS) with bootstrap dropdown-toggle-->
-				  <button type="button" class="navButtons dropdown-toggle" data-bs-toggle="dropdown"> 
+				  <button type="button" class="navButtons dropdown-toggle" data-bs-toggle="dropdown" style="display:none;"> 
 					Services
 				  </button>
 				  <ul class="dropdown-menu">
@@ -120,7 +153,7 @@
 				</li>
 				<div>
 				<li style="float:right"><button class="navButtonsSpecial" href="#Sign-In" onclick="document.location='login.php'" >Sign In</button></li>
-				<li style="float:right"><button class="navButtons" disabled href="#about">Projects</button></li>
+				<li style="float:right"><button class="navButtons" disabled href="#about">About Me</button></li>
 				<li style="float:right"><button class="navButtons" onclick="document.location='Download/Resume.pdf'" download>Download Resume</button></li>
 				</div>
 			</ul>

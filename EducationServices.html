@@ -52,7 +52,7 @@
 				<a href="AboutMe.html">About Me</a>
 				<a href="ContactMe.html">Contact Me</a>
 				<a href="login.php">Sign In</a>
-				<a href="javascript:{}" class="dropdown-btn" onclick="#">
+				<a href="javascript:{}" class="dropdown-btn" onclick="#" style="display:none;>
 					Services<i class="fa fa-caret-down" style="padding-top:5px;"></i>
 				</a>
 				<div class="dropdown-container">
@@ -79,15 +79,15 @@
 			</div>
 
 			<ul class="customnav">
-			 	<li class=""><button class="openbtn" onclick="openNav()"> <!--&#8801; I removed a symbol remove comment to add it again--> <i class="fa fa-bars"></i></button> </li>
+			 	<li><button class="openbtn" onclick="openNav()"> <!--&#8801; I removed a symbol remove comment to add it again--><i class="fa fa-bars"></i> </li>
 				<li class="navLeftButtonSlots"><button class="navButtons" style="color:white;" onclick="document.location='../index.html'"> Home </button> </li>
 				<li class="navLeftButtonSlots"><button class="navButtons" style="color:white;" onclick="document.location='AboutMe.html'"> About Me </button> </li>
 				<li class="navLeftButtonSlots"><button class="navButtons" style="color:white;" onclick="document.location='Projects Page Personal Website.html'"> Projects </button> </li>
 				<li class="navLeftButtonSlots"><button class="navButtons" style="color:white;" onclick="document.location='ContactMe.html'"> Contact Me </button> </li>
 				<li>
-				<div class="dropdown">
+				<div class="dropdown" >
 					<!--Example of stacking two classes navButtons(Custom CSS) with bootstrap dropdown-toggle-->
-				  <button type="button" class="navButtons dropdown-toggle" data-bs-toggle="dropdown"> 
+				  <button type="button" class="navButtons dropdown-toggle" data-bs-toggle="dropdown" style="display:none;"> 
 					Services
 				  </button>
 				  <ul class="dropdown-menu">
@@ -97,7 +97,7 @@
 				</li>
 				<div>
 				<li style="float:right"><button class="navButtonsSpecial" href="#Sign-In" onclick="document.location='login.php'" >Sign In</button></li>
-				<li style="float:right"><button class="navButtons" disabled href="#about">EDU</button></li>
+				<li style="float:right"><button class="navButtons" disabled href="#about">About Me</button></li>
 				<li style="float:right"><button class="navButtons" onclick="document.location='Download/Resume.pdf'" download>Download Resume</button></li>
 				</div>
 			</ul>
